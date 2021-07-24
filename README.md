@@ -52,22 +52,8 @@ versions for enviorment setup:
 ## Happy Coding!
 
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Other Useful Links
+### Docker
+[Introducing Docker](https://cwhu.medium.com/docker-tutorial-101-c3808b899ac6)
+[Docker Manual](https://philipzheng.gitbook.io/docker_practice/image/pull)
