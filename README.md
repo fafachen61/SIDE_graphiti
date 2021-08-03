@@ -42,7 +42,7 @@ versions for enviorment setup:
 ## How to set up
 
 1. clone the repository
-2. npm install
+2. yarn add
 3. bundle install
 4. cd to the <repo>
 5. rails s
