@@ -583,3 +583,1383 @@ tar: Exiting with failure status due to previous errors
   INFO [9f0c55e3] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@34.80.42.5
  DEBUG [9f0c55e3] Command: cd /home/deploy/graffiti/releases/20210807160435 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
  DEBUG [9f0c55e3] 	bash: /home/deploy/.rbenv/bin/rbenv: No such file or directory
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:09:40 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fda94b4e] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [fda94b4e] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fda94b4e] Finished in 0.569 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-6ff76fa21798f22ecea0.sh 0.0%
+  INFO Uploading /tmp/git-ssh-6ff76fa21798f22ecea0.sh 100.0%
+  INFO [0d9bcbcb] Running /usr/bin/env chmod 700 /tmp/git-ssh-6ff76fa21798f22ecea0.sh as deploy@34.80.42.5
+ DEBUG [0d9bcbcb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-6ff76fa21798f22ecea0.sh
+  INFO [0d9bcbcb] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [d16ca168] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [d16ca168] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6ff76fa21798f22ecea0.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [d16ca168] 	Warning: Permanently added the RSA host key for IP address '192.30.255.113' to the list of known hosts.
+ DEBUG [d16ca168] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6	HEAD
+  INFO [d16ca168] Finished in 2.611 seconds with exit status 0 (successful).
+  INFO [0b80d366] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [0b80d366] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases
+  INFO [0b80d366] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [32eee727] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [32eee727] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets
+  INFO [32eee727] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [4438fc5e] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [4438fc5e] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config
+  INFO [4438fc5e] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [9577c486] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [9577c486] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [9577c486] Finished in 0.109 seconds with exit status 0 (successful).
+ DEBUG [c4a31d24] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [c4a31d24] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [c4a31d24] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [a47045bf] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [a47045bf] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [a47045bf] Finished in 0.121 seconds with exit status 1 (failed).
+ DEBUG [8b582b6f] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [8b582b6f] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [8b582b6f] Finished in 0.210 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/graffiti/repo
+ DEBUG [8eedc5f0] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [8eedc5f0] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [8eedc5f0] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [efb72709] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [efb72709] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6ff76fa21798f22ecea0.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [efb72709] Finished in 0.178 seconds with exit status 0 (successful).
+  INFO [507ef8f1] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [507ef8f1] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6ff76fa21798f22ecea0.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [507ef8f1] 	Fetching origin
+ DEBUG [507ef8f1] 	From github.com:fafachen61/SIDE_graphiti
+   23268a9..f3b038a  main       -> main
+  INFO [507ef8f1] Finished in 2.676 seconds with exit status 0 (successful).
+ DEBUG [08972028] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [08972028] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [08972028] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [757349e9] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160946 as deploy@34.80.42.5
+ DEBUG [757349e9] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6ff76fa21798f22ecea0.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160946 )
+  INFO [757349e9] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO [9dd40fd6] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807160946 as deploy@34.80.42.5
+ DEBUG [9dd40fd6] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6ff76fa21798f22ecea0.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807160946 )
+  INFO [9dd40fd6] Finished in 4.529 seconds with exit status 0 (successful).
+ DEBUG [aa4e7a6e] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [aa4e7a6e] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [aa4e7a6e] Finished in 0.136 seconds with exit status 0 (successful).
+ DEBUG [4ac0c7d5] Running /usr/bin/env git rev-list --max-count=1 main as deploy@34.80.42.5
+ DEBUG [4ac0c7d5] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6ff76fa21798f22ecea0.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [4ac0c7d5] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6
+ DEBUG [4ac0c7d5] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [9d1b5a6e] Running if test ! -d /home/deploy/graffiti/releases/20210807160946; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807160946'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [9d1b5a6e] Command: if test ! -d /home/deploy/graffiti/releases/20210807160946; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807160946'" 1>&2; false; fi
+ DEBUG [9d1b5a6e] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [629bf70e] Running /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION as deploy@34.80.42.5
+ DEBUG [629bf70e] Command: cd /home/deploy/graffiti/releases/20210807160946 && /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION
+  INFO [629bf70e] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [72504ed5] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160946/config as deploy@34.80.42.5
+ DEBUG [72504ed5] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160946/config
+  INFO [72504ed5] Finished in 0.114 seconds with exit status 0 (successful).
+ DEBUG [75121518] Running [ -L /home/deploy/graffiti/releases/20210807160946/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [75121518] Command: [ -L /home/deploy/graffiti/releases/20210807160946/config/database.yml ]
+ DEBUG [75121518] Finished in 0.139 seconds with exit status 1 (failed).
+ DEBUG [56b9564d] Running [ -f /home/deploy/graffiti/releases/20210807160946/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [56b9564d] Command: [ -f /home/deploy/graffiti/releases/20210807160946/config/database.yml ]
+ DEBUG [56b9564d] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [f64593c0] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807160946/config/database.yml as deploy@34.80.42.5
+ DEBUG [f64593c0] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807160946/config/database.yml
+  INFO [f64593c0] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [f1877e4c] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807160946/config/database.yml as deploy@34.80.42.5
+ DEBUG [f1877e4c] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807160946/config/database.yml
+  INFO [f1877e4c] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [686f10a7] Running [ -L /home/deploy/graffiti/releases/20210807160946/config/master.key ] as deploy@34.80.42.5
+ DEBUG [686f10a7] Command: [ -L /home/deploy/graffiti/releases/20210807160946/config/master.key ]
+ DEBUG [686f10a7] Finished in 0.118 seconds with exit status 1 (failed).
+ DEBUG [7d29f078] Running [ -f /home/deploy/graffiti/releases/20210807160946/config/master.key ] as deploy@34.80.42.5
+ DEBUG [7d29f078] Command: [ -f /home/deploy/graffiti/releases/20210807160946/config/master.key ]
+ DEBUG [7d29f078] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [bd2a3636] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807160946/config/master.key as deploy@34.80.42.5
+ DEBUG [bd2a3636] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807160946/config/master.key
+  INFO [bd2a3636] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [cc6d56a9] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807160946/config/master.key as deploy@34.80.42.5
+ DEBUG [cc6d56a9] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807160946/config/master.key
+  INFO [cc6d56a9] Finished in 0.239 seconds with exit status 0 (successful).
+  INFO [1c150058] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160946 /home/deploy/graffiti/releases/20210807160946/tmp /home/deploy/graffiti/releases/20210807160946/public as deploy@34.80.42.5
+ DEBUG [1c150058] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160946 /home/deploy/graffiti/releases/20210807160946/tmp /home/deploy/graffiti/releases/20210807160946/public
+  INFO [1c150058] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [9e05ceed] Running [ -L /home/deploy/graffiti/releases/20210807160946/log ] as deploy@34.80.42.5
+ DEBUG [9e05ceed] Command: [ -L /home/deploy/graffiti/releases/20210807160946/log ]
+ DEBUG [9e05ceed] Finished in 0.115 seconds with exit status 1 (failed).
+ DEBUG [c0d60ac3] Running [ -d /home/deploy/graffiti/releases/20210807160946/log ] as deploy@34.80.42.5
+ DEBUG [c0d60ac3] Command: [ -d /home/deploy/graffiti/releases/20210807160946/log ]
+ DEBUG [c0d60ac3] Finished in 0.384 seconds with exit status 0 (successful).
+  INFO [907f48e8] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160946/log as deploy@34.80.42.5
+ DEBUG [907f48e8] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160946/log
+  INFO [907f48e8] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [d673720a] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807160946/log as deploy@34.80.42.5
+ DEBUG [d673720a] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807160946/log
+  INFO [d673720a] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [010f829f] Running [ -L /home/deploy/graffiti/releases/20210807160946/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [010f829f] Command: [ -L /home/deploy/graffiti/releases/20210807160946/tmp/pids ]
+ DEBUG [010f829f] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [cdfce0f1] Running [ -d /home/deploy/graffiti/releases/20210807160946/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [cdfce0f1] Command: [ -d /home/deploy/graffiti/releases/20210807160946/tmp/pids ]
+ DEBUG [cdfce0f1] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [6f8ce45f] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160946/tmp/pids as deploy@34.80.42.5
+ DEBUG [6f8ce45f] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160946/tmp/pids
+  INFO [6f8ce45f] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO [0e22c6b3] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807160946/tmp/pids as deploy@34.80.42.5
+ DEBUG [0e22c6b3] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807160946/tmp/pids
+  INFO [0e22c6b3] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [fe78d867] Running [ -L /home/deploy/graffiti/releases/20210807160946/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [fe78d867] Command: [ -L /home/deploy/graffiti/releases/20210807160946/tmp/cache ]
+ DEBUG [fe78d867] Finished in 0.121 seconds with exit status 1 (failed).
+ DEBUG [da932fbb] Running [ -d /home/deploy/graffiti/releases/20210807160946/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [da932fbb] Command: [ -d /home/deploy/graffiti/releases/20210807160946/tmp/cache ]
+ DEBUG [da932fbb] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [a067435c] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160946/tmp/cache as deploy@34.80.42.5
+ DEBUG [a067435c] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160946/tmp/cache
+  INFO [a067435c] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [6b224eb7] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807160946/tmp/cache as deploy@34.80.42.5
+ DEBUG [6b224eb7] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807160946/tmp/cache
+  INFO [6b224eb7] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [236e1a3b] Running [ -L /home/deploy/graffiti/releases/20210807160946/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [236e1a3b] Command: [ -L /home/deploy/graffiti/releases/20210807160946/tmp/sockets ]
+ DEBUG [236e1a3b] Finished in 0.114 seconds with exit status 1 (failed).
+ DEBUG [5a2bcfa4] Running [ -d /home/deploy/graffiti/releases/20210807160946/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [5a2bcfa4] Command: [ -d /home/deploy/graffiti/releases/20210807160946/tmp/sockets ]
+ DEBUG [5a2bcfa4] Finished in 0.158 seconds with exit status 1 (failed).
+  INFO [e7deb712] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807160946/tmp/sockets as deploy@34.80.42.5
+ DEBUG [e7deb712] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807160946/tmp/sockets
+  INFO [e7deb712] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG [1be89c65] Running [ -L /home/deploy/graffiti/releases/20210807160946/public/system ] as deploy@34.80.42.5
+ DEBUG [1be89c65] Command: [ -L /home/deploy/graffiti/releases/20210807160946/public/system ]
+ DEBUG [1be89c65] Finished in 0.118 seconds with exit status 1 (failed).
+ DEBUG [5cdf59cb] Running [ -d /home/deploy/graffiti/releases/20210807160946/public/system ] as deploy@34.80.42.5
+ DEBUG [5cdf59cb] Command: [ -d /home/deploy/graffiti/releases/20210807160946/public/system ]
+ DEBUG [5cdf59cb] Finished in 0.120 seconds with exit status 1 (failed).
+  INFO [3e9ce422] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807160946/public/system as deploy@34.80.42.5
+ DEBUG [3e9ce422] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807160946/public/system
+  INFO [3e9ce422] Finished in 0.521 seconds with exit status 0 (successful).
+ DEBUG [7da3b184] Running [ -L /home/deploy/graffiti/releases/20210807160946/public/assets ] as deploy@34.80.42.5
+ DEBUG [7da3b184] Command: [ -L /home/deploy/graffiti/releases/20210807160946/public/assets ]
+ DEBUG [7da3b184] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [da7e1c7f] Running [ -d /home/deploy/graffiti/releases/20210807160946/public/assets ] as deploy@34.80.42.5
+ DEBUG [da7e1c7f] Command: [ -d /home/deploy/graffiti/releases/20210807160946/public/assets ]
+ DEBUG [da7e1c7f] Finished in 0.151 seconds with exit status 1 (failed).
+  INFO [d6df6c88] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807160946/public/assets as deploy@34.80.42.5
+ DEBUG [d6df6c88] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807160946/public/assets
+  INFO [d6df6c88] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [da6cc256] Running if test ! -d /home/deploy/graffiti/releases/20210807160946; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807160946'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [da6cc256] Command: if test ! -d /home/deploy/graffiti/releases/20210807160946; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807160946'" 1>&2; false; fi
+ DEBUG [da6cc256] Finished in 0.119 seconds with exit status 0 (successful).
+  INFO [8fabccc4] Running /usr/bin/env bundle config --local deployment true as deploy@34.80.42.5
+ DEBUG [8fabccc4] Command: cd /home/deploy/graffiti/releases/20210807160946 && /usr/bin/env bundle config --local deployment true
+ DEBUG [8fabccc4] 	/usr/lib/ruby/2.5.0/rubygems.rb:284:in `find_spec_for_exe': Could not find 'bundler' (1.17.3) required by your /home/deploy/graffiti/releases/20210807160946/Gemfile.lock. (Gem::GemNotFoundException)
+ DEBUG [8fabccc4] 	To update to the latest version installed on your system, run `bundle update --bundler`.
+To install the missing version, run `gem install bundler:1.17.3`
+	from /usr/lib/ruby/2.5.0/rubygems.rb:303:in `activate_bin_path'
+	from /usr/local/bin/bundle:23:in `<main>'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:12:45 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f20ada71] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [f20ada71] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f20ada71] Finished in 0.527 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-f75cee5479ca3350f725.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f75cee5479ca3350f725.sh 100.0%
+  INFO [930a9b87] Running /usr/bin/env chmod 700 /tmp/git-ssh-f75cee5479ca3350f725.sh as deploy@34.80.42.5
+ DEBUG [930a9b87] Command: /usr/bin/env chmod 700 /tmp/git-ssh-f75cee5479ca3350f725.sh
+  INFO [930a9b87] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [a124ffda] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [a124ffda] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f75cee5479ca3350f725.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [a124ffda] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6	HEAD
+  INFO [a124ffda] Finished in 2.115 seconds with exit status 0 (successful).
+  INFO [c4b33f1d] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [c4b33f1d] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases
+  INFO [c4b33f1d] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [8a0c070d] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [8a0c070d] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets
+  INFO [8a0c070d] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [f5a7105c] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [f5a7105c] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config
+  INFO [f5a7105c] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [93c07c99] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [93c07c99] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [93c07c99] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [1eba50fb] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [1eba50fb] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [1eba50fb] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [22e0a998] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [22e0a998] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [22e0a998] Finished in 0.128 seconds with exit status 1 (failed).
+ DEBUG [55ec457a] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [55ec457a] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [55ec457a] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/graffiti/repo
+ DEBUG [43caf675] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [43caf675] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [43caf675] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [1763cada] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [1763cada] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f75cee5479ca3350f725.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [1763cada] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [f82e297d] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [f82e297d] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f75cee5479ca3350f725.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f82e297d] 	Fetching origin
+  INFO [f82e297d] Finished in 2.285 seconds with exit status 0 (successful).
+ DEBUG [4b7d221b] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [4b7d221b] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [4b7d221b] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [bd9aa24c] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807161250 as deploy@34.80.42.5
+ DEBUG [bd9aa24c] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f75cee5479ca3350f725.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807161250 )
+  INFO [bd9aa24c] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [9a8d9d4f] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807161250 as deploy@34.80.42.5
+ DEBUG [9a8d9d4f] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f75cee5479ca3350f725.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807161250 )
+  INFO [9a8d9d4f] Finished in 3.677 seconds with exit status 0 (successful).
+ DEBUG [fded5e34] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [fded5e34] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [fded5e34] Finished in 0.131 seconds with exit status 0 (successful).
+ DEBUG [4a00d2e1] Running /usr/bin/env git rev-list --max-count=1 main as deploy@34.80.42.5
+ DEBUG [4a00d2e1] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f75cee5479ca3350f725.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [4a00d2e1] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6
+ DEBUG [4a00d2e1] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [42d6888d] Running if test ! -d /home/deploy/graffiti/releases/20210807161250; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807161250'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [42d6888d] Command: if test ! -d /home/deploy/graffiti/releases/20210807161250; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807161250'" 1>&2; false; fi
+ DEBUG [42d6888d] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [f05685c1] Running /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION as deploy@34.80.42.5
+ DEBUG [f05685c1] Command: cd /home/deploy/graffiti/releases/20210807161250 && /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION
+  INFO [f05685c1] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [7ccf813b] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807161250/config as deploy@34.80.42.5
+ DEBUG [7ccf813b] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807161250/config
+  INFO [7ccf813b] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [395168da] Running [ -L /home/deploy/graffiti/releases/20210807161250/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [395168da] Command: [ -L /home/deploy/graffiti/releases/20210807161250/config/database.yml ]
+ DEBUG [395168da] Finished in 0.106 seconds with exit status 1 (failed).
+ DEBUG [d193323a] Running [ -f /home/deploy/graffiti/releases/20210807161250/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [d193323a] Command: [ -f /home/deploy/graffiti/releases/20210807161250/config/database.yml ]
+ DEBUG [d193323a] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [74f910aa] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807161250/config/database.yml as deploy@34.80.42.5
+ DEBUG [74f910aa] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807161250/config/database.yml
+  INFO [74f910aa] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [7878fb04] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807161250/config/database.yml as deploy@34.80.42.5
+ DEBUG [7878fb04] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807161250/config/database.yml
+  INFO [7878fb04] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [c7b38b8a] Running [ -L /home/deploy/graffiti/releases/20210807161250/config/master.key ] as deploy@34.80.42.5
+ DEBUG [c7b38b8a] Command: [ -L /home/deploy/graffiti/releases/20210807161250/config/master.key ]
+ DEBUG [c7b38b8a] Finished in 0.157 seconds with exit status 1 (failed).
+ DEBUG [4da3b2c6] Running [ -f /home/deploy/graffiti/releases/20210807161250/config/master.key ] as deploy@34.80.42.5
+ DEBUG [4da3b2c6] Command: [ -f /home/deploy/graffiti/releases/20210807161250/config/master.key ]
+ DEBUG [4da3b2c6] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [2cecb0fc] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807161250/config/master.key as deploy@34.80.42.5
+ DEBUG [2cecb0fc] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807161250/config/master.key
+  INFO [2cecb0fc] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [bb303629] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807161250/config/master.key as deploy@34.80.42.5
+ DEBUG [bb303629] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807161250/config/master.key
+  INFO [bb303629] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [50410b86] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807161250 /home/deploy/graffiti/releases/20210807161250/tmp /home/deploy/graffiti/releases/20210807161250/public as deploy@34.80.42.5
+ DEBUG [50410b86] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807161250 /home/deploy/graffiti/releases/20210807161250/tmp /home/deploy/graffiti/releases/20210807161250/public
+  INFO [50410b86] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [007bd186] Running [ -L /home/deploy/graffiti/releases/20210807161250/log ] as deploy@34.80.42.5
+ DEBUG [007bd186] Command: [ -L /home/deploy/graffiti/releases/20210807161250/log ]
+ DEBUG [007bd186] Finished in 0.117 seconds with exit status 1 (failed).
+ DEBUG [c4ffdff8] Running [ -d /home/deploy/graffiti/releases/20210807161250/log ] as deploy@34.80.42.5
+ DEBUG [c4ffdff8] Command: [ -d /home/deploy/graffiti/releases/20210807161250/log ]
+ DEBUG [c4ffdff8] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO [7e53f305] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807161250/log as deploy@34.80.42.5
+ DEBUG [7e53f305] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807161250/log
+  INFO [7e53f305] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [ea1fdc8c] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807161250/log as deploy@34.80.42.5
+ DEBUG [ea1fdc8c] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807161250/log
+  INFO [ea1fdc8c] Finished in 0.161 seconds with exit status 0 (successful).
+ DEBUG [ad0b6713] Running [ -L /home/deploy/graffiti/releases/20210807161250/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [ad0b6713] Command: [ -L /home/deploy/graffiti/releases/20210807161250/tmp/pids ]
+ DEBUG [ad0b6713] Finished in 0.116 seconds with exit status 1 (failed).
+ DEBUG [31a17f46] Running [ -d /home/deploy/graffiti/releases/20210807161250/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [31a17f46] Command: [ -d /home/deploy/graffiti/releases/20210807161250/tmp/pids ]
+ DEBUG [31a17f46] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO [28943df4] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807161250/tmp/pids as deploy@34.80.42.5
+ DEBUG [28943df4] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807161250/tmp/pids
+  INFO [28943df4] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [d01b7d40] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807161250/tmp/pids as deploy@34.80.42.5
+ DEBUG [d01b7d40] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807161250/tmp/pids
+  INFO [d01b7d40] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [41ad895e] Running [ -L /home/deploy/graffiti/releases/20210807161250/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [41ad895e] Command: [ -L /home/deploy/graffiti/releases/20210807161250/tmp/cache ]
+ DEBUG [41ad895e] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [e903757e] Running [ -d /home/deploy/graffiti/releases/20210807161250/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [e903757e] Command: [ -d /home/deploy/graffiti/releases/20210807161250/tmp/cache ]
+ DEBUG [e903757e] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [07b46127] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807161250/tmp/cache as deploy@34.80.42.5
+ DEBUG [07b46127] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807161250/tmp/cache
+  INFO [07b46127] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [c2801af4] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807161250/tmp/cache as deploy@34.80.42.5
+ DEBUG [c2801af4] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807161250/tmp/cache
+  INFO [c2801af4] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [d1d1e5f2] Running [ -L /home/deploy/graffiti/releases/20210807161250/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [d1d1e5f2] Command: [ -L /home/deploy/graffiti/releases/20210807161250/tmp/sockets ]
+ DEBUG [d1d1e5f2] Finished in 0.122 seconds with exit status 1 (failed).
+ DEBUG [8663d137] Running [ -d /home/deploy/graffiti/releases/20210807161250/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [8663d137] Command: [ -d /home/deploy/graffiti/releases/20210807161250/tmp/sockets ]
+ DEBUG [8663d137] Finished in 0.120 seconds with exit status 1 (failed).
+  INFO [cf3135fc] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807161250/tmp/sockets as deploy@34.80.42.5
+ DEBUG [cf3135fc] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807161250/tmp/sockets
+  INFO [cf3135fc] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [4768305b] Running [ -L /home/deploy/graffiti/releases/20210807161250/public/system ] as deploy@34.80.42.5
+ DEBUG [4768305b] Command: [ -L /home/deploy/graffiti/releases/20210807161250/public/system ]
+ DEBUG [4768305b] Finished in 0.112 seconds with exit status 1 (failed).
+ DEBUG [0a9dc3c2] Running [ -d /home/deploy/graffiti/releases/20210807161250/public/system ] as deploy@34.80.42.5
+ DEBUG [0a9dc3c2] Command: [ -d /home/deploy/graffiti/releases/20210807161250/public/system ]
+ DEBUG [0a9dc3c2] Finished in 0.188 seconds with exit status 1 (failed).
+  INFO [49ad97a6] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807161250/public/system as deploy@34.80.42.5
+ DEBUG [49ad97a6] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807161250/public/system
+  INFO [49ad97a6] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [b50778ba] Running [ -L /home/deploy/graffiti/releases/20210807161250/public/assets ] as deploy@34.80.42.5
+ DEBUG [b50778ba] Command: [ -L /home/deploy/graffiti/releases/20210807161250/public/assets ]
+ DEBUG [b50778ba] Finished in 0.153 seconds with exit status 1 (failed).
+ DEBUG [a9c6757f] Running [ -d /home/deploy/graffiti/releases/20210807161250/public/assets ] as deploy@34.80.42.5
+ DEBUG [a9c6757f] Command: [ -d /home/deploy/graffiti/releases/20210807161250/public/assets ]
+ DEBUG [a9c6757f] Finished in 0.129 seconds with exit status 1 (failed).
+  INFO [ec6d0307] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807161250/public/assets as deploy@34.80.42.5
+ DEBUG [ec6d0307] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807161250/public/assets
+  INFO [ec6d0307] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [5bade996] Running if test ! -d /home/deploy/graffiti/releases/20210807161250; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807161250'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [5bade996] Command: if test ! -d /home/deploy/graffiti/releases/20210807161250; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807161250'" 1>&2; false; fi
+ DEBUG [5bade996] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [1fbcaa04] Running /usr/bin/env bundle config --local deployment true as deploy@34.80.42.5
+ DEBUG [1fbcaa04] Command: cd /home/deploy/graffiti/releases/20210807161250 && /usr/bin/env bundle config --local deployment true
+ DEBUG [1fbcaa04] 	/usr/local/bin/bundle:23:in `load': cannot load such file -- /usr/share/rubygems-integration/all/gems/bundler-1.11.2/exe/bundle (LoadError)
+	from /usr/local/bin/bundle:23:in `<main>'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:40:56 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0f817649] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [0f817649] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0f817649] Finished in 0.731 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-abc0d77c5236fa3b74f6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-abc0d77c5236fa3b74f6.sh 100.0%
+  INFO [62c2e1e4] Running /usr/bin/env chmod 700 /tmp/git-ssh-abc0d77c5236fa3b74f6.sh as deploy@34.80.42.5
+ DEBUG [62c2e1e4] Command: /usr/bin/env chmod 700 /tmp/git-ssh-abc0d77c5236fa3b74f6.sh
+  INFO [62c2e1e4] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [743c7f3e] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [743c7f3e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-abc0d77c5236fa3b74f6.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [743c7f3e] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6	HEAD
+  INFO [743c7f3e] Finished in 2.400 seconds with exit status 0 (successful).
+  INFO [bc77ce54] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [bc77ce54] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases
+  INFO [bc77ce54] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [c83cf18b] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [c83cf18b] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets
+  INFO [c83cf18b] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [d5eef1ce] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [d5eef1ce] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config
+  INFO [d5eef1ce] Finished in 0.134 seconds with exit status 0 (successful).
+ DEBUG [b0a6791c] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [b0a6791c] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [b0a6791c] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [b47e5c26] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [b47e5c26] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [b47e5c26] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [40278096] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [40278096] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [40278096] Finished in 0.106 seconds with exit status 1 (failed).
+ DEBUG [87cf190f] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [87cf190f] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [87cf190f] Finished in 0.172 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/graffiti/repo
+ DEBUG [d712cae5] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [d712cae5] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [d712cae5] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [5ebc8aae] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [5ebc8aae] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-abc0d77c5236fa3b74f6.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [5ebc8aae] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [f9c56f03] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [f9c56f03] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-abc0d77c5236fa3b74f6.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f9c56f03] 	Fetching origin
+  INFO [f9c56f03] Finished in 2.380 seconds with exit status 0 (successful).
+ DEBUG [46f528b3] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [46f528b3] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [46f528b3] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [1c62b8a8] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164101 as deploy@34.80.42.5
+ DEBUG [1c62b8a8] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-abc0d77c5236fa3b74f6.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164101 )
+  INFO [1c62b8a8] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [fd5e91f5] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807164101 as deploy@34.80.42.5
+ DEBUG [fd5e91f5] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-abc0d77c5236fa3b74f6.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807164101 )
+  INFO [fd5e91f5] Finished in 4.666 seconds with exit status 0 (successful).
+ DEBUG [94e1a7bf] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [94e1a7bf] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [94e1a7bf] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [f428a590] Running /usr/bin/env git rev-list --max-count=1 main as deploy@34.80.42.5
+ DEBUG [f428a590] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-abc0d77c5236fa3b74f6.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [f428a590] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6
+ DEBUG [f428a590] Finished in 0.135 seconds with exit status 0 (successful).
+ DEBUG [9a97ccb3] Running if test ! -d /home/deploy/graffiti/releases/20210807164101; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807164101'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [9a97ccb3] Command: if test ! -d /home/deploy/graffiti/releases/20210807164101; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807164101'" 1>&2; false; fi
+ DEBUG [9a97ccb3] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [74a6a3c7] Running /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION as deploy@34.80.42.5
+ DEBUG [74a6a3c7] Command: cd /home/deploy/graffiti/releases/20210807164101 && /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION
+  INFO [74a6a3c7] Finished in 0.120 seconds with exit status 0 (successful).
+  INFO [4b727697] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164101/config as deploy@34.80.42.5
+ DEBUG [4b727697] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164101/config
+  INFO [4b727697] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [a16c8592] Running [ -L /home/deploy/graffiti/releases/20210807164101/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [a16c8592] Command: [ -L /home/deploy/graffiti/releases/20210807164101/config/database.yml ]
+ DEBUG [a16c8592] Finished in 0.127 seconds with exit status 1 (failed).
+ DEBUG [dcda8070] Running [ -f /home/deploy/graffiti/releases/20210807164101/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [dcda8070] Command: [ -f /home/deploy/graffiti/releases/20210807164101/config/database.yml ]
+ DEBUG [dcda8070] Finished in 0.162 seconds with exit status 0 (successful).
+  INFO [d3eda2e3] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807164101/config/database.yml as deploy@34.80.42.5
+ DEBUG [d3eda2e3] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807164101/config/database.yml
+  INFO [d3eda2e3] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [38191bfd] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807164101/config/database.yml as deploy@34.80.42.5
+ DEBUG [38191bfd] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807164101/config/database.yml
+  INFO [38191bfd] Finished in 0.132 seconds with exit status 0 (successful).
+ DEBUG [7bb794b7] Running [ -L /home/deploy/graffiti/releases/20210807164101/config/master.key ] as deploy@34.80.42.5
+ DEBUG [7bb794b7] Command: [ -L /home/deploy/graffiti/releases/20210807164101/config/master.key ]
+ DEBUG [7bb794b7] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [1813c2e4] Running [ -f /home/deploy/graffiti/releases/20210807164101/config/master.key ] as deploy@34.80.42.5
+ DEBUG [1813c2e4] Command: [ -f /home/deploy/graffiti/releases/20210807164101/config/master.key ]
+ DEBUG [1813c2e4] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [9cda6703] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807164101/config/master.key as deploy@34.80.42.5
+ DEBUG [9cda6703] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807164101/config/master.key
+  INFO [9cda6703] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [24ac8310] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807164101/config/master.key as deploy@34.80.42.5
+ DEBUG [24ac8310] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807164101/config/master.key
+  INFO [24ac8310] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [9035ed47] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164101 /home/deploy/graffiti/releases/20210807164101/tmp /home/deploy/graffiti/releases/20210807164101/public as deploy@34.80.42.5
+ DEBUG [9035ed47] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164101 /home/deploy/graffiti/releases/20210807164101/tmp /home/deploy/graffiti/releases/20210807164101/public
+  INFO [9035ed47] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [1f59eda5] Running [ -L /home/deploy/graffiti/releases/20210807164101/log ] as deploy@34.80.42.5
+ DEBUG [1f59eda5] Command: [ -L /home/deploy/graffiti/releases/20210807164101/log ]
+ DEBUG [1f59eda5] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [12f717fd] Running [ -d /home/deploy/graffiti/releases/20210807164101/log ] as deploy@34.80.42.5
+ DEBUG [12f717fd] Command: [ -d /home/deploy/graffiti/releases/20210807164101/log ]
+ DEBUG [12f717fd] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [c075f94a] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164101/log as deploy@34.80.42.5
+ DEBUG [c075f94a] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164101/log
+  INFO [c075f94a] Finished in 0.264 seconds with exit status 0 (successful).
+  INFO [ad62d425] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807164101/log as deploy@34.80.42.5
+ DEBUG [ad62d425] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807164101/log
+  INFO [ad62d425] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [0240bd10] Running [ -L /home/deploy/graffiti/releases/20210807164101/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [0240bd10] Command: [ -L /home/deploy/graffiti/releases/20210807164101/tmp/pids ]
+ DEBUG [0240bd10] Finished in 0.149 seconds with exit status 1 (failed).
+ DEBUG [f6b25caf] Running [ -d /home/deploy/graffiti/releases/20210807164101/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [f6b25caf] Command: [ -d /home/deploy/graffiti/releases/20210807164101/tmp/pids ]
+ DEBUG [f6b25caf] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [15301003] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164101/tmp/pids as deploy@34.80.42.5
+ DEBUG [15301003] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164101/tmp/pids
+  INFO [15301003] Finished in 0.119 seconds with exit status 0 (successful).
+  INFO [c4ac3105] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807164101/tmp/pids as deploy@34.80.42.5
+ DEBUG [c4ac3105] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807164101/tmp/pids
+  INFO [c4ac3105] Finished in 0.134 seconds with exit status 0 (successful).
+ DEBUG [1698efc6] Running [ -L /home/deploy/graffiti/releases/20210807164101/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [1698efc6] Command: [ -L /home/deploy/graffiti/releases/20210807164101/tmp/cache ]
+ DEBUG [1698efc6] Finished in 0.119 seconds with exit status 1 (failed).
+ DEBUG [867c4618] Running [ -d /home/deploy/graffiti/releases/20210807164101/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [867c4618] Command: [ -d /home/deploy/graffiti/releases/20210807164101/tmp/cache ]
+ DEBUG [867c4618] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [3b2ece8a] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164101/tmp/cache as deploy@34.80.42.5
+ DEBUG [3b2ece8a] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164101/tmp/cache
+  INFO [3b2ece8a] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO [7e244e12] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807164101/tmp/cache as deploy@34.80.42.5
+ DEBUG [7e244e12] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807164101/tmp/cache
+  INFO [7e244e12] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG [5bd5e36f] Running [ -L /home/deploy/graffiti/releases/20210807164101/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [5bd5e36f] Command: [ -L /home/deploy/graffiti/releases/20210807164101/tmp/sockets ]
+ DEBUG [5bd5e36f] Finished in 0.126 seconds with exit status 1 (failed).
+ DEBUG [bc2f82dd] Running [ -d /home/deploy/graffiti/releases/20210807164101/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [bc2f82dd] Command: [ -d /home/deploy/graffiti/releases/20210807164101/tmp/sockets ]
+ DEBUG [bc2f82dd] Finished in 0.107 seconds with exit status 1 (failed).
+  INFO [9cdf0a81] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807164101/tmp/sockets as deploy@34.80.42.5
+ DEBUG [9cdf0a81] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807164101/tmp/sockets
+  INFO [9cdf0a81] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [62149edf] Running [ -L /home/deploy/graffiti/releases/20210807164101/public/system ] as deploy@34.80.42.5
+ DEBUG [62149edf] Command: [ -L /home/deploy/graffiti/releases/20210807164101/public/system ]
+ DEBUG [62149edf] Finished in 0.130 seconds with exit status 1 (failed).
+ DEBUG [d1321516] Running [ -d /home/deploy/graffiti/releases/20210807164101/public/system ] as deploy@34.80.42.5
+ DEBUG [d1321516] Command: [ -d /home/deploy/graffiti/releases/20210807164101/public/system ]
+ DEBUG [d1321516] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [08c285df] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807164101/public/system as deploy@34.80.42.5
+ DEBUG [08c285df] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807164101/public/system
+  INFO [08c285df] Finished in 0.134 seconds with exit status 0 (successful).
+ DEBUG [c38a9305] Running [ -L /home/deploy/graffiti/releases/20210807164101/public/assets ] as deploy@34.80.42.5
+ DEBUG [c38a9305] Command: [ -L /home/deploy/graffiti/releases/20210807164101/public/assets ]
+ DEBUG [c38a9305] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [0ed712be] Running [ -d /home/deploy/graffiti/releases/20210807164101/public/assets ] as deploy@34.80.42.5
+ DEBUG [0ed712be] Command: [ -d /home/deploy/graffiti/releases/20210807164101/public/assets ]
+ DEBUG [0ed712be] Finished in 0.127 seconds with exit status 1 (failed).
+  INFO [f9df8af1] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807164101/public/assets as deploy@34.80.42.5
+ DEBUG [f9df8af1] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807164101/public/assets
+  INFO [f9df8af1] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [c45e981e] Running if test ! -d /home/deploy/graffiti/releases/20210807164101; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807164101'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [c45e981e] Command: if test ! -d /home/deploy/graffiti/releases/20210807164101; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807164101'" 1>&2; false; fi
+ DEBUG [c45e981e] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [b43707ce] Running /usr/bin/env bundle config --local deployment true as deploy@34.80.42.5
+ DEBUG [b43707ce] Command: cd /home/deploy/graffiti/releases/20210807164101 && /usr/bin/env bundle config --local deployment true
+ DEBUG [b43707ce] 	/usr/local/bin/bundle:23:in `load': cannot load such file -- /usr/share/rubygems-integration/all/gems/bundler-1.11.2/exe/bundle (LoadError)
+	from /usr/local/bin/bundle:23:in `<main>'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:47:51 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4a3d487b] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [4a3d487b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4a3d487b] Finished in 1.258 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e6b75eedbadb507c654d.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e6b75eedbadb507c654d.sh 100.0%
+  INFO [379c773b] Running /usr/bin/env chmod 700 /tmp/git-ssh-e6b75eedbadb507c654d.sh as deploy@34.80.42.5
+ DEBUG [379c773b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-e6b75eedbadb507c654d.sh
+  INFO [379c773b] Finished in 0.222 seconds with exit status 0 (successful).
+  INFO [12430b13] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [12430b13] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6b75eedbadb507c654d.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [12430b13] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6	HEAD
+  INFO [12430b13] Finished in 2.812 seconds with exit status 0 (successful).
+  INFO [5e018cc9] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [5e018cc9] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases
+  INFO [5e018cc9] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [d8a7b7f2] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [d8a7b7f2] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets
+  INFO [d8a7b7f2] Finished in 0.213 seconds with exit status 0 (successful).
+  INFO [ae918df8] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [ae918df8] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config
+  INFO [ae918df8] Finished in 0.268 seconds with exit status 0 (successful).
+ DEBUG [9759f27f] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [9759f27f] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [9759f27f] Finished in 0.228 seconds with exit status 0 (successful).
+ DEBUG [e710c0ee] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [e710c0ee] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [e710c0ee] Finished in 0.246 seconds with exit status 0 (successful).
+ DEBUG [2cdf121a] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [2cdf121a] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [2cdf121a] Finished in 0.233 seconds with exit status 1 (failed).
+ DEBUG [ef31e687] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [ef31e687] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [ef31e687] Finished in 0.232 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/graffiti/repo
+ DEBUG [12287a42] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [12287a42] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [12287a42] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [1bbdd3ad] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [1bbdd3ad] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6b75eedbadb507c654d.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [1bbdd3ad] Finished in 0.251 seconds with exit status 0 (successful).
+  INFO [ecf1ab15] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [ecf1ab15] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6b75eedbadb507c654d.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ecf1ab15] 	Fetching origin
+  INFO [ecf1ab15] Finished in 2.636 seconds with exit status 0 (successful).
+ DEBUG [e0a9d8ec] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [e0a9d8ec] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [e0a9d8ec] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO [936a529a] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164805 as deploy@34.80.42.5
+ DEBUG [936a529a] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6b75eedbadb507c654d.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164805 )
+  INFO [936a529a] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [3ffc0451] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807164805 as deploy@34.80.42.5
+ DEBUG [3ffc0451] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6b75eedbadb507c654d.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807164805 )
+  INFO [3ffc0451] Finished in 11.310 seconds with exit status 0 (successful).
+ DEBUG [1db7b184] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [1db7b184] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [1db7b184] Finished in 0.207 seconds with exit status 0 (successful).
+ DEBUG [39a55db0] Running /usr/bin/env git rev-list --max-count=1 main as deploy@34.80.42.5
+ DEBUG [39a55db0] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6b75eedbadb507c654d.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [39a55db0] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6
+ DEBUG [39a55db0] Finished in 0.276 seconds with exit status 0 (successful).
+ DEBUG [e56db0a6] Running if test ! -d /home/deploy/graffiti/releases/20210807164805; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807164805'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [e56db0a6] Command: if test ! -d /home/deploy/graffiti/releases/20210807164805; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807164805'" 1>&2; false; fi
+ DEBUG [e56db0a6] Finished in 0.218 seconds with exit status 0 (successful).
+  INFO [7f435019] Running /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION as deploy@34.80.42.5
+ DEBUG [7f435019] Command: cd /home/deploy/graffiti/releases/20210807164805 && /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION
+  INFO [7f435019] Finished in 0.231 seconds with exit status 0 (successful).
+  INFO [ef2f3cd1] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164805/config as deploy@34.80.42.5
+ DEBUG [ef2f3cd1] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164805/config
+  INFO [ef2f3cd1] Finished in 0.226 seconds with exit status 0 (successful).
+ DEBUG [ca43dd55] Running [ -L /home/deploy/graffiti/releases/20210807164805/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [ca43dd55] Command: [ -L /home/deploy/graffiti/releases/20210807164805/config/database.yml ]
+ DEBUG [ca43dd55] Finished in 0.243 seconds with exit status 1 (failed).
+ DEBUG [cbbf806c] Running [ -f /home/deploy/graffiti/releases/20210807164805/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [cbbf806c] Command: [ -f /home/deploy/graffiti/releases/20210807164805/config/database.yml ]
+ DEBUG [cbbf806c] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO [f123a381] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807164805/config/database.yml as deploy@34.80.42.5
+ DEBUG [f123a381] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807164805/config/database.yml
+  INFO [f123a381] Finished in 0.562 seconds with exit status 0 (successful).
+  INFO [91d4281f] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807164805/config/database.yml as deploy@34.80.42.5
+ DEBUG [91d4281f] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807164805/config/database.yml
+  INFO [91d4281f] Finished in 0.210 seconds with exit status 0 (successful).
+ DEBUG [2bb9c329] Running [ -L /home/deploy/graffiti/releases/20210807164805/config/master.key ] as deploy@34.80.42.5
+ DEBUG [2bb9c329] Command: [ -L /home/deploy/graffiti/releases/20210807164805/config/master.key ]
+ DEBUG [2bb9c329] Finished in 0.229 seconds with exit status 1 (failed).
+ DEBUG [7f06a0e6] Running [ -f /home/deploy/graffiti/releases/20210807164805/config/master.key ] as deploy@34.80.42.5
+ DEBUG [7f06a0e6] Command: [ -f /home/deploy/graffiti/releases/20210807164805/config/master.key ]
+ DEBUG [7f06a0e6] Finished in 0.246 seconds with exit status 0 (successful).
+  INFO [138bfb53] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807164805/config/master.key as deploy@34.80.42.5
+ DEBUG [138bfb53] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807164805/config/master.key
+  INFO [138bfb53] Finished in 0.254 seconds with exit status 0 (successful).
+  INFO [441b8429] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807164805/config/master.key as deploy@34.80.42.5
+ DEBUG [441b8429] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807164805/config/master.key
+  INFO [441b8429] Finished in 0.247 seconds with exit status 0 (successful).
+  INFO [a538418e] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164805 /home/deploy/graffiti/releases/20210807164805/tmp /home/deploy/graffiti/releases/20210807164805/public as deploy@34.80.42.5
+ DEBUG [a538418e] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807164805 /home/deploy/graffiti/releases/20210807164805/tmp /home/deploy/graffiti/releases/20210807164805/public
+  INFO [a538418e] Finished in 0.247 seconds with exit status 0 (successful).
+ DEBUG [6bba5653] Running [ -L /home/deploy/graffiti/releases/20210807164805/log ] as deploy@34.80.42.5
+ DEBUG [6bba5653] Command: [ -L /home/deploy/graffiti/releases/20210807164805/log ]
+ DEBUG [6bba5653] Finished in 0.114 seconds with exit status 1 (failed).
+ DEBUG [9f0ffbaf] Running [ -d /home/deploy/graffiti/releases/20210807164805/log ] as deploy@34.80.42.5
+ DEBUG [9f0ffbaf] Command: [ -d /home/deploy/graffiti/releases/20210807164805/log ]
+ DEBUG [9f0ffbaf] Finished in 0.380 seconds with exit status 0 (successful).
+  INFO [59951551] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164805/log as deploy@34.80.42.5
+ DEBUG [59951551] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164805/log
+  INFO [59951551] Finished in 0.250 seconds with exit status 0 (successful).
+  INFO [84f521bd] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807164805/log as deploy@34.80.42.5
+ DEBUG [84f521bd] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807164805/log
+  INFO [84f521bd] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [cde67cb7] Running [ -L /home/deploy/graffiti/releases/20210807164805/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [cde67cb7] Command: [ -L /home/deploy/graffiti/releases/20210807164805/tmp/pids ]
+ DEBUG [cde67cb7] Finished in 0.239 seconds with exit status 1 (failed).
+ DEBUG [50985f35] Running [ -d /home/deploy/graffiti/releases/20210807164805/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [50985f35] Command: [ -d /home/deploy/graffiti/releases/20210807164805/tmp/pids ]
+ DEBUG [50985f35] Finished in 0.228 seconds with exit status 0 (successful).
+  INFO [44ccdf7d] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164805/tmp/pids as deploy@34.80.42.5
+ DEBUG [44ccdf7d] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164805/tmp/pids
+  INFO [44ccdf7d] Finished in 0.212 seconds with exit status 0 (successful).
+  INFO [ed645480] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807164805/tmp/pids as deploy@34.80.42.5
+ DEBUG [ed645480] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807164805/tmp/pids
+  INFO [ed645480] Finished in 0.236 seconds with exit status 0 (successful).
+ DEBUG [26c81041] Running [ -L /home/deploy/graffiti/releases/20210807164805/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [26c81041] Command: [ -L /home/deploy/graffiti/releases/20210807164805/tmp/cache ]
+ DEBUG [26c81041] Finished in 0.276 seconds with exit status 1 (failed).
+ DEBUG [f9461a75] Running [ -d /home/deploy/graffiti/releases/20210807164805/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [f9461a75] Command: [ -d /home/deploy/graffiti/releases/20210807164805/tmp/cache ]
+ DEBUG [f9461a75] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO [8e97ab5d] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164805/tmp/cache as deploy@34.80.42.5
+ DEBUG [8e97ab5d] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807164805/tmp/cache
+  INFO [8e97ab5d] Finished in 0.270 seconds with exit status 0 (successful).
+  INFO [5e281de8] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807164805/tmp/cache as deploy@34.80.42.5
+ DEBUG [5e281de8] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807164805/tmp/cache
+  INFO [5e281de8] Finished in 0.207 seconds with exit status 0 (successful).
+ DEBUG [02d42b5a] Running [ -L /home/deploy/graffiti/releases/20210807164805/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [02d42b5a] Command: [ -L /home/deploy/graffiti/releases/20210807164805/tmp/sockets ]
+ DEBUG [02d42b5a] Finished in 0.230 seconds with exit status 1 (failed).
+ DEBUG [f9dad0aa] Running [ -d /home/deploy/graffiti/releases/20210807164805/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [f9dad0aa] Command: [ -d /home/deploy/graffiti/releases/20210807164805/tmp/sockets ]
+ DEBUG [f9dad0aa] Finished in 0.228 seconds with exit status 1 (failed).
+  INFO [73c88f50] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807164805/tmp/sockets as deploy@34.80.42.5
+ DEBUG [73c88f50] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807164805/tmp/sockets
+  INFO [73c88f50] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [201fe8dd] Running [ -L /home/deploy/graffiti/releases/20210807164805/public/system ] as deploy@34.80.42.5
+ DEBUG [201fe8dd] Command: [ -L /home/deploy/graffiti/releases/20210807164805/public/system ]
+ DEBUG [201fe8dd] Finished in 0.219 seconds with exit status 1 (failed).
+ DEBUG [2878f0f9] Running [ -d /home/deploy/graffiti/releases/20210807164805/public/system ] as deploy@34.80.42.5
+ DEBUG [2878f0f9] Command: [ -d /home/deploy/graffiti/releases/20210807164805/public/system ]
+ DEBUG [2878f0f9] Finished in 0.251 seconds with exit status 1 (failed).
+  INFO [04c147ae] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807164805/public/system as deploy@34.80.42.5
+ DEBUG [04c147ae] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807164805/public/system
+  INFO [04c147ae] Finished in 0.238 seconds with exit status 0 (successful).
+ DEBUG [0a1181f3] Running [ -L /home/deploy/graffiti/releases/20210807164805/public/assets ] as deploy@34.80.42.5
+ DEBUG [0a1181f3] Command: [ -L /home/deploy/graffiti/releases/20210807164805/public/assets ]
+ DEBUG [0a1181f3] Finished in 0.445 seconds with exit status 1 (failed).
+ DEBUG [0074e1ba] Running [ -d /home/deploy/graffiti/releases/20210807164805/public/assets ] as deploy@34.80.42.5
+ DEBUG [0074e1ba] Command: [ -d /home/deploy/graffiti/releases/20210807164805/public/assets ]
+ DEBUG [0074e1ba] Finished in 0.105 seconds with exit status 1 (failed).
+  INFO [28bfe424] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807164805/public/assets as deploy@34.80.42.5
+ DEBUG [28bfe424] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807164805/public/assets
+  INFO [28bfe424] Finished in 0.206 seconds with exit status 0 (successful).
+ DEBUG [3159c219] Running if test ! -d /home/deploy/graffiti/releases/20210807164805; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807164805'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [3159c219] Command: if test ! -d /home/deploy/graffiti/releases/20210807164805; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807164805'" 1>&2; false; fi
+ DEBUG [3159c219] Finished in 0.263 seconds with exit status 0 (successful).
+  INFO [fdfe56ea] Running /usr/bin/env bundle config --local deployment true as deploy@34.80.42.5
+ DEBUG [fdfe56ea] Command: cd /home/deploy/graffiti/releases/20210807164805 && /usr/bin/env bundle config --local deployment true
+ DEBUG [fdfe56ea] 	/usr/local/bin/bundle:23:in `load'
+ DEBUG [fdfe56ea] 	: 
+ DEBUG [fdfe56ea] 	cannot load such file -- /usr/share/rubygems-integration/all/gems/bundler-1.11.2/exe/bundle
+ DEBUG [fdfe56ea] 	 (
+ DEBUG [fdfe56ea] 	LoadError
+ DEBUG [fdfe56ea] 	)
+ DEBUG [fdfe56ea] 		from /usr/local/bin/bundle:23:in `<main>'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:56:09 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [986c2639] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [986c2639] Command: /usr/bin/env mkdir -p /tmp
+  INFO [986c2639] Finished in 0.648 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b481a23edce14003239e.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b481a23edce14003239e.sh 100.0%
+  INFO [ba89bbc3] Running /usr/bin/env chmod 700 /tmp/git-ssh-b481a23edce14003239e.sh as deploy@34.80.42.5
+ DEBUG [ba89bbc3] Command: /usr/bin/env chmod 700 /tmp/git-ssh-b481a23edce14003239e.sh
+  INFO [ba89bbc3] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [7f14a26a] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [7f14a26a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b481a23edce14003239e.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [7f14a26a] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6	HEAD
+  INFO [7f14a26a] Finished in 2.130 seconds with exit status 0 (successful).
+  INFO [20aca3cf] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [20aca3cf] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases
+  INFO [20aca3cf] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [5b653ee2] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [5b653ee2] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets
+  INFO [5b653ee2] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [cacda167] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [cacda167] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config
+  INFO [cacda167] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [f2758d99] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [f2758d99] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [f2758d99] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [1ec22b2b] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [1ec22b2b] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [1ec22b2b] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [dd053f56] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [dd053f56] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [dd053f56] Finished in 0.104 seconds with exit status 1 (failed).
+ DEBUG [249c9eef] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [249c9eef] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [249c9eef] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/graffiti/repo
+ DEBUG [9d83c7ea] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [9d83c7ea] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [9d83c7ea] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [860ce9ab] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [860ce9ab] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b481a23edce14003239e.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [860ce9ab] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO [dc4c2460] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [dc4c2460] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b481a23edce14003239e.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [dc4c2460] 	Fetching origin
+  INFO [dc4c2460] Finished in 2.665 seconds with exit status 0 (successful).
+ DEBUG [5758de9e] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [5758de9e] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [5758de9e] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [29d1b760] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165615 as deploy@34.80.42.5
+ DEBUG [29d1b760] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b481a23edce14003239e.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165615 )
+  INFO [29d1b760] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [0d97fad6] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807165615 as deploy@34.80.42.5
+ DEBUG [0d97fad6] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b481a23edce14003239e.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807165615 )
+  INFO [0d97fad6] Finished in 4.757 seconds with exit status 0 (successful).
+ DEBUG [b342d9e8] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [b342d9e8] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [b342d9e8] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [9cc818c7] Running /usr/bin/env git rev-list --max-count=1 main as deploy@34.80.42.5
+ DEBUG [9cc818c7] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b481a23edce14003239e.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [9cc818c7] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6
+ DEBUG [9cc818c7] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [65bb528d] Running if test ! -d /home/deploy/graffiti/releases/20210807165615; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165615'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [65bb528d] Command: if test ! -d /home/deploy/graffiti/releases/20210807165615; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165615'" 1>&2; false; fi
+ DEBUG [65bb528d] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO [1370a8db] Running /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION as deploy@34.80.42.5
+ DEBUG [1370a8db] Command: cd /home/deploy/graffiti/releases/20210807165615 && /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION
+  INFO [1370a8db] Finished in 0.121 seconds with exit status 0 (successful).
+  INFO [90f143ff] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165615/config as deploy@34.80.42.5
+ DEBUG [90f143ff] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165615/config
+  INFO [90f143ff] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG [aa5850a2] Running [ -L /home/deploy/graffiti/releases/20210807165615/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [aa5850a2] Command: [ -L /home/deploy/graffiti/releases/20210807165615/config/database.yml ]
+ DEBUG [aa5850a2] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [20285eec] Running [ -f /home/deploy/graffiti/releases/20210807165615/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [20285eec] Command: [ -f /home/deploy/graffiti/releases/20210807165615/config/database.yml ]
+ DEBUG [20285eec] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [d8acdf3a] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807165615/config/database.yml as deploy@34.80.42.5
+ DEBUG [d8acdf3a] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807165615/config/database.yml
+  INFO [d8acdf3a] Finished in 0.120 seconds with exit status 0 (successful).
+  INFO [be405a05] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807165615/config/database.yml as deploy@34.80.42.5
+ DEBUG [be405a05] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807165615/config/database.yml
+  INFO [be405a05] Finished in 0.136 seconds with exit status 0 (successful).
+ DEBUG [b2b7aa68] Running [ -L /home/deploy/graffiti/releases/20210807165615/config/master.key ] as deploy@34.80.42.5
+ DEBUG [b2b7aa68] Command: [ -L /home/deploy/graffiti/releases/20210807165615/config/master.key ]
+ DEBUG [b2b7aa68] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [b6aee531] Running [ -f /home/deploy/graffiti/releases/20210807165615/config/master.key ] as deploy@34.80.42.5
+ DEBUG [b6aee531] Command: [ -f /home/deploy/graffiti/releases/20210807165615/config/master.key ]
+ DEBUG [b6aee531] Finished in 0.121 seconds with exit status 0 (successful).
+  INFO [b40e4b8a] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807165615/config/master.key as deploy@34.80.42.5
+ DEBUG [b40e4b8a] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807165615/config/master.key
+  INFO [b40e4b8a] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [408e62c9] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807165615/config/master.key as deploy@34.80.42.5
+ DEBUG [408e62c9] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807165615/config/master.key
+  INFO [408e62c9] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [fad1e9fc] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165615 /home/deploy/graffiti/releases/20210807165615/tmp /home/deploy/graffiti/releases/20210807165615/public as deploy@34.80.42.5
+ DEBUG [fad1e9fc] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165615 /home/deploy/graffiti/releases/20210807165615/tmp /home/deploy/graffiti/releases/20210807165615/public
+  INFO [fad1e9fc] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [8b7747b6] Running [ -L /home/deploy/graffiti/releases/20210807165615/log ] as deploy@34.80.42.5
+ DEBUG [8b7747b6] Command: [ -L /home/deploy/graffiti/releases/20210807165615/log ]
+ DEBUG [8b7747b6] Finished in 0.112 seconds with exit status 1 (failed).
+ DEBUG [b39c0d71] Running [ -d /home/deploy/graffiti/releases/20210807165615/log ] as deploy@34.80.42.5
+ DEBUG [b39c0d71] Command: [ -d /home/deploy/graffiti/releases/20210807165615/log ]
+ DEBUG [b39c0d71] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [9d8d9323] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165615/log as deploy@34.80.42.5
+ DEBUG [9d8d9323] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165615/log
+  INFO [9d8d9323] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [21b668e6] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807165615/log as deploy@34.80.42.5
+ DEBUG [21b668e6] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807165615/log
+  INFO [21b668e6] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [6b5f96d7] Running [ -L /home/deploy/graffiti/releases/20210807165615/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [6b5f96d7] Command: [ -L /home/deploy/graffiti/releases/20210807165615/tmp/pids ]
+ DEBUG [6b5f96d7] Finished in 0.109 seconds with exit status 1 (failed).
+ DEBUG [5a928614] Running [ -d /home/deploy/graffiti/releases/20210807165615/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [5a928614] Command: [ -d /home/deploy/graffiti/releases/20210807165615/tmp/pids ]
+ DEBUG [5a928614] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [b220a274] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165615/tmp/pids as deploy@34.80.42.5
+ DEBUG [b220a274] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165615/tmp/pids
+  INFO [b220a274] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [186df4e1] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807165615/tmp/pids as deploy@34.80.42.5
+ DEBUG [186df4e1] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807165615/tmp/pids
+  INFO [186df4e1] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [f943c9e7] Running [ -L /home/deploy/graffiti/releases/20210807165615/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [f943c9e7] Command: [ -L /home/deploy/graffiti/releases/20210807165615/tmp/cache ]
+ DEBUG [f943c9e7] Finished in 0.114 seconds with exit status 1 (failed).
+ DEBUG [8bc916c8] Running [ -d /home/deploy/graffiti/releases/20210807165615/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [8bc916c8] Command: [ -d /home/deploy/graffiti/releases/20210807165615/tmp/cache ]
+ DEBUG [8bc916c8] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [5ecd9fdc] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165615/tmp/cache as deploy@34.80.42.5
+ DEBUG [5ecd9fdc] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165615/tmp/cache
+  INFO [5ecd9fdc] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [b7bb6278] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807165615/tmp/cache as deploy@34.80.42.5
+ DEBUG [b7bb6278] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807165615/tmp/cache
+  INFO [b7bb6278] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [33c57060] Running [ -L /home/deploy/graffiti/releases/20210807165615/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [33c57060] Command: [ -L /home/deploy/graffiti/releases/20210807165615/tmp/sockets ]
+ DEBUG [33c57060] Finished in 0.120 seconds with exit status 1 (failed).
+ DEBUG [a5184a80] Running [ -d /home/deploy/graffiti/releases/20210807165615/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [a5184a80] Command: [ -d /home/deploy/graffiti/releases/20210807165615/tmp/sockets ]
+ DEBUG [a5184a80] Finished in 0.113 seconds with exit status 1 (failed).
+  INFO [1ac063cc] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807165615/tmp/sockets as deploy@34.80.42.5
+ DEBUG [1ac063cc] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807165615/tmp/sockets
+  INFO [1ac063cc] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [68176f5a] Running [ -L /home/deploy/graffiti/releases/20210807165615/public/system ] as deploy@34.80.42.5
+ DEBUG [68176f5a] Command: [ -L /home/deploy/graffiti/releases/20210807165615/public/system ]
+ DEBUG [68176f5a] Finished in 0.124 seconds with exit status 1 (failed).
+ DEBUG [ff475390] Running [ -d /home/deploy/graffiti/releases/20210807165615/public/system ] as deploy@34.80.42.5
+ DEBUG [ff475390] Command: [ -d /home/deploy/graffiti/releases/20210807165615/public/system ]
+ DEBUG [ff475390] Finished in 0.132 seconds with exit status 1 (failed).
+  INFO [4d90aff7] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807165615/public/system as deploy@34.80.42.5
+ DEBUG [4d90aff7] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807165615/public/system
+  INFO [4d90aff7] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [5ec7555b] Running [ -L /home/deploy/graffiti/releases/20210807165615/public/assets ] as deploy@34.80.42.5
+ DEBUG [5ec7555b] Command: [ -L /home/deploy/graffiti/releases/20210807165615/public/assets ]
+ DEBUG [5ec7555b] Finished in 0.111 seconds with exit status 1 (failed).
+ DEBUG [5a963b5c] Running [ -d /home/deploy/graffiti/releases/20210807165615/public/assets ] as deploy@34.80.42.5
+ DEBUG [5a963b5c] Command: [ -d /home/deploy/graffiti/releases/20210807165615/public/assets ]
+ DEBUG [5a963b5c] Finished in 0.132 seconds with exit status 1 (failed).
+  INFO [7cd3172e] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807165615/public/assets as deploy@34.80.42.5
+ DEBUG [7cd3172e] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807165615/public/assets
+  INFO [7cd3172e] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [380356ad] Running if test ! -d /home/deploy/graffiti/releases/20210807165615; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165615'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [380356ad] Command: if test ! -d /home/deploy/graffiti/releases/20210807165615; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165615'" 1>&2; false; fi
+ DEBUG [380356ad] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [a6d9d536] Running /usr/bin/env bundle config --local deployment true as deploy@34.80.42.5
+ DEBUG [a6d9d536] Command: cd /home/deploy/graffiti/releases/20210807165615 && /usr/bin/env bundle config --local deployment true
+ DEBUG [a6d9d536] 	/usr/local/bin/bundle:23:in `load': cannot load such file -- /usr/share/rubygems-integration/all/gems/bundler-1.11.2/exe/bundle (LoadError)
+	from /usr/local/bin/bundle:23:in `<main>'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:58:08 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a12ab004] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [a12ab004] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a12ab004] Finished in 0.535 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-5bfb84fc5e7479e0029d.sh 0.0%
+  INFO Uploading /tmp/git-ssh-5bfb84fc5e7479e0029d.sh 100.0%
+  INFO [783155ff] Running /usr/bin/env chmod 700 /tmp/git-ssh-5bfb84fc5e7479e0029d.sh as deploy@34.80.42.5
+ DEBUG [783155ff] Command: /usr/bin/env chmod 700 /tmp/git-ssh-5bfb84fc5e7479e0029d.sh
+  INFO [783155ff] Finished in 0.459 seconds with exit status 0 (successful).
+  INFO [c822917b] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [c822917b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5bfb84fc5e7479e0029d.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [c822917b] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6	HEAD
+  INFO [c822917b] Finished in 2.075 seconds with exit status 0 (successful).
+  INFO [f4b68173] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [f4b68173] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases
+  INFO [f4b68173] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [f3d08d93] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [f3d08d93] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets
+  INFO [f3d08d93] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [769490e4] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [769490e4] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config
+  INFO [769490e4] Finished in 0.165 seconds with exit status 0 (successful).
+ DEBUG [9e15ffb8] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [9e15ffb8] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [9e15ffb8] Finished in 0.255 seconds with exit status 0 (successful).
+ DEBUG [ae3ea779] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [ae3ea779] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [ae3ea779] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [e3a8c271] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [e3a8c271] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [e3a8c271] Finished in 0.131 seconds with exit status 1 (failed).
+ DEBUG [409aa1e3] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [409aa1e3] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [409aa1e3] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/graffiti/repo
+ DEBUG [96f04192] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [96f04192] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [96f04192] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [4877d3f0] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [4877d3f0] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5bfb84fc5e7479e0029d.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [4877d3f0] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [9f72db15] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [9f72db15] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5bfb84fc5e7479e0029d.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9f72db15] 	Fetching origin
+  INFO [9f72db15] Finished in 2.272 seconds with exit status 0 (successful).
+ DEBUG [e1ac4c3a] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [e1ac4c3a] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [e1ac4c3a] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [f74c3756] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165816 as deploy@34.80.42.5
+ DEBUG [f74c3756] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5bfb84fc5e7479e0029d.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165816 )
+  INFO [f74c3756] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [6fce2977] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807165816 as deploy@34.80.42.5
+ DEBUG [6fce2977] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5bfb84fc5e7479e0029d.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807165816 )
+  INFO [6fce2977] Finished in 4.335 seconds with exit status 0 (successful).
+ DEBUG [cc5c5c90] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [cc5c5c90] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [cc5c5c90] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [a14d81a7] Running /usr/bin/env git rev-list --max-count=1 main as deploy@34.80.42.5
+ DEBUG [a14d81a7] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5bfb84fc5e7479e0029d.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [a14d81a7] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6
+ DEBUG [a14d81a7] Finished in 0.131 seconds with exit status 0 (successful).
+ DEBUG [b8a2f360] Running if test ! -d /home/deploy/graffiti/releases/20210807165816; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165816'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [b8a2f360] Command: if test ! -d /home/deploy/graffiti/releases/20210807165816; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165816'" 1>&2; false; fi
+ DEBUG [b8a2f360] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [ca70b9e3] Running /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION as deploy@34.80.42.5
+ DEBUG [ca70b9e3] Command: cd /home/deploy/graffiti/releases/20210807165816 && /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION
+  INFO [ca70b9e3] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [3083af00] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165816/config as deploy@34.80.42.5
+ DEBUG [3083af00] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165816/config
+  INFO [3083af00] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [935c68cd] Running [ -L /home/deploy/graffiti/releases/20210807165816/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [935c68cd] Command: [ -L /home/deploy/graffiti/releases/20210807165816/config/database.yml ]
+ DEBUG [935c68cd] Finished in 0.115 seconds with exit status 1 (failed).
+ DEBUG [75ccd987] Running [ -f /home/deploy/graffiti/releases/20210807165816/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [75ccd987] Command: [ -f /home/deploy/graffiti/releases/20210807165816/config/database.yml ]
+ DEBUG [75ccd987] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [f6db69de] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807165816/config/database.yml as deploy@34.80.42.5
+ DEBUG [f6db69de] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807165816/config/database.yml
+  INFO [f6db69de] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [dfa35e7f] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807165816/config/database.yml as deploy@34.80.42.5
+ DEBUG [dfa35e7f] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807165816/config/database.yml
+  INFO [dfa35e7f] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [d9d5ab04] Running [ -L /home/deploy/graffiti/releases/20210807165816/config/master.key ] as deploy@34.80.42.5
+ DEBUG [d9d5ab04] Command: [ -L /home/deploy/graffiti/releases/20210807165816/config/master.key ]
+ DEBUG [d9d5ab04] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [6926bb0b] Running [ -f /home/deploy/graffiti/releases/20210807165816/config/master.key ] as deploy@34.80.42.5
+ DEBUG [6926bb0b] Command: [ -f /home/deploy/graffiti/releases/20210807165816/config/master.key ]
+ DEBUG [6926bb0b] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO [5788f5f7] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807165816/config/master.key as deploy@34.80.42.5
+ DEBUG [5788f5f7] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807165816/config/master.key
+  INFO [5788f5f7] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [47d3b0d6] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807165816/config/master.key as deploy@34.80.42.5
+ DEBUG [47d3b0d6] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807165816/config/master.key
+  INFO [47d3b0d6] Finished in 0.161 seconds with exit status 0 (successful).
+  INFO [644704bc] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165816 /home/deploy/graffiti/releases/20210807165816/tmp /home/deploy/graffiti/releases/20210807165816/public as deploy@34.80.42.5
+ DEBUG [644704bc] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165816 /home/deploy/graffiti/releases/20210807165816/tmp /home/deploy/graffiti/releases/20210807165816/public
+  INFO [644704bc] Finished in 0.130 seconds with exit status 0 (successful).
+ DEBUG [0ad96186] Running [ -L /home/deploy/graffiti/releases/20210807165816/log ] as deploy@34.80.42.5
+ DEBUG [0ad96186] Command: [ -L /home/deploy/graffiti/releases/20210807165816/log ]
+ DEBUG [0ad96186] Finished in 0.108 seconds with exit status 1 (failed).
+ DEBUG [ce8f9436] Running [ -d /home/deploy/graffiti/releases/20210807165816/log ] as deploy@34.80.42.5
+ DEBUG [ce8f9436] Command: [ -d /home/deploy/graffiti/releases/20210807165816/log ]
+ DEBUG [ce8f9436] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO [5e06e264] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165816/log as deploy@34.80.42.5
+ DEBUG [5e06e264] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165816/log
+  INFO [5e06e264] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [fe15abfe] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807165816/log as deploy@34.80.42.5
+ DEBUG [fe15abfe] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807165816/log
+  INFO [fe15abfe] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [5c7452af] Running [ -L /home/deploy/graffiti/releases/20210807165816/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [5c7452af] Command: [ -L /home/deploy/graffiti/releases/20210807165816/tmp/pids ]
+ DEBUG [5c7452af] Finished in 0.124 seconds with exit status 1 (failed).
+ DEBUG [b908d8ff] Running [ -d /home/deploy/graffiti/releases/20210807165816/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [b908d8ff] Command: [ -d /home/deploy/graffiti/releases/20210807165816/tmp/pids ]
+ DEBUG [b908d8ff] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [866791f3] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165816/tmp/pids as deploy@34.80.42.5
+ DEBUG [866791f3] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165816/tmp/pids
+  INFO [866791f3] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [d2c36df1] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807165816/tmp/pids as deploy@34.80.42.5
+ DEBUG [d2c36df1] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807165816/tmp/pids
+  INFO [d2c36df1] Finished in 0.118 seconds with exit status 0 (successful).
+ DEBUG [cb1dba5f] Running [ -L /home/deploy/graffiti/releases/20210807165816/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [cb1dba5f] Command: [ -L /home/deploy/graffiti/releases/20210807165816/tmp/cache ]
+ DEBUG [cb1dba5f] Finished in 0.111 seconds with exit status 1 (failed).
+ DEBUG [01902875] Running [ -d /home/deploy/graffiti/releases/20210807165816/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [01902875] Command: [ -d /home/deploy/graffiti/releases/20210807165816/tmp/cache ]
+ DEBUG [01902875] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [f646369f] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165816/tmp/cache as deploy@34.80.42.5
+ DEBUG [f646369f] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165816/tmp/cache
+  INFO [f646369f] Finished in 0.120 seconds with exit status 0 (successful).
+  INFO [ef8cd31c] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807165816/tmp/cache as deploy@34.80.42.5
+ DEBUG [ef8cd31c] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807165816/tmp/cache
+  INFO [ef8cd31c] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG [69e4f5fd] Running [ -L /home/deploy/graffiti/releases/20210807165816/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [69e4f5fd] Command: [ -L /home/deploy/graffiti/releases/20210807165816/tmp/sockets ]
+ DEBUG [69e4f5fd] Finished in 0.117 seconds with exit status 1 (failed).
+ DEBUG [8c696efc] Running [ -d /home/deploy/graffiti/releases/20210807165816/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [8c696efc] Command: [ -d /home/deploy/graffiti/releases/20210807165816/tmp/sockets ]
+ DEBUG [8c696efc] Finished in 0.127 seconds with exit status 1 (failed).
+  INFO [0402f6c5] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807165816/tmp/sockets as deploy@34.80.42.5
+ DEBUG [0402f6c5] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807165816/tmp/sockets
+  INFO [0402f6c5] Finished in 0.109 seconds with exit status 0 (successful).
+ DEBUG [2072accb] Running [ -L /home/deploy/graffiti/releases/20210807165816/public/system ] as deploy@34.80.42.5
+ DEBUG [2072accb] Command: [ -L /home/deploy/graffiti/releases/20210807165816/public/system ]
+ DEBUG [2072accb] Finished in 0.142 seconds with exit status 1 (failed).
+ DEBUG [acbd3f48] Running [ -d /home/deploy/graffiti/releases/20210807165816/public/system ] as deploy@34.80.42.5
+ DEBUG [acbd3f48] Command: [ -d /home/deploy/graffiti/releases/20210807165816/public/system ]
+ DEBUG [acbd3f48] Finished in 0.105 seconds with exit status 1 (failed).
+  INFO [8b50de1b] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807165816/public/system as deploy@34.80.42.5
+ DEBUG [8b50de1b] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807165816/public/system
+  INFO [8b50de1b] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [f5a08aae] Running [ -L /home/deploy/graffiti/releases/20210807165816/public/assets ] as deploy@34.80.42.5
+ DEBUG [f5a08aae] Command: [ -L /home/deploy/graffiti/releases/20210807165816/public/assets ]
+ DEBUG [f5a08aae] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [221070bc] Running [ -d /home/deploy/graffiti/releases/20210807165816/public/assets ] as deploy@34.80.42.5
+ DEBUG [221070bc] Command: [ -d /home/deploy/graffiti/releases/20210807165816/public/assets ]
+ DEBUG [221070bc] Finished in 0.125 seconds with exit status 1 (failed).
+  INFO [7cf2dfa9] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807165816/public/assets as deploy@34.80.42.5
+ DEBUG [7cf2dfa9] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807165816/public/assets
+  INFO [7cf2dfa9] Finished in 0.114 seconds with exit status 0 (successful).
+ DEBUG [436235c8] Running if test ! -d /home/deploy/graffiti/releases/20210807165816; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165816'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [436235c8] Command: if test ! -d /home/deploy/graffiti/releases/20210807165816; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165816'" 1>&2; false; fi
+ DEBUG [436235c8] Finished in 0.120 seconds with exit status 0 (successful).
+  INFO [5a7cb676] Running /usr/bin/env bundle config --local deployment true as deploy@34.80.42.5
+ DEBUG [5a7cb676] Command: cd /home/deploy/graffiti/releases/20210807165816 && /usr/bin/env bundle config --local deployment true
+ DEBUG [5a7cb676] 	You are replacing the current local value of deployment, which is currently nil
+  INFO [5a7cb676] Finished in 0.275 seconds with exit status 0 (successful).
+  INFO [af3c101c] Running /usr/bin/env bundle config --local path /home/deploy/graffiti/shared/bundle as deploy@34.80.42.5
+ DEBUG [af3c101c] Command: cd /home/deploy/graffiti/releases/20210807165816 && /usr/bin/env bundle config --local path /home/deploy/graffiti/shared/bundle
+ DEBUG [af3c101c] 	You are replacing the current local value of path, which is currently nil
+  INFO [af3c101c] Finished in 0.274 seconds with exit status 0 (successful).
+  INFO [7fb83bd4] Running /usr/bin/env bundle config --local without development:test as deploy@34.80.42.5
+ DEBUG [7fb83bd4] Command: cd /home/deploy/graffiti/releases/20210807165816 && /usr/bin/env bundle config --local without development:test
+ DEBUG [7fb83bd4] 	You are replacing the current local value of without, which is currently nil
+  INFO [7fb83bd4] Finished in 0.256 seconds with exit status 0 (successful).
+ DEBUG [c1d35597] Running if test ! -d /home/deploy/graffiti/releases/20210807165816; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165816'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [c1d35597] Command: if test ! -d /home/deploy/graffiti/releases/20210807165816; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165816'" 1>&2; false; fi
+ DEBUG [c1d35597] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [70ffc37b] Running /usr/bin/env bundle check as deploy@34.80.42.5
+ DEBUG [70ffc37b] Command: cd /home/deploy/graffiti/releases/20210807165816 && /usr/bin/env bundle check
+ DEBUG [70ffc37b] 	Warning: the running version of Bundler (1.17.2) is older than the version that created the lockfile (1.17.3). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+ DEBUG [70ffc37b] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [70ffc37b] 	The following gems are missing
+ * rake (13.0.6)
+ DEBUG [70ffc37b] 	 * concurrent-ruby (1.1.9)
+ * i18n (1.8.10)
+ DEBUG [70ffc37b] 	 * minitest (5.14.4)
+ * thread_safe (0.3.6)
+ DEBUG [70ffc37b] 	 * tzinfo (1.2.9)
+ DEBUG [70ffc37b] 	 * activesupport (5.2.6)
+ DEBUG [70ffc37b] 	 * builder (3.2.4)
+ DEBUG [70ffc37b] 	 * erubi (1.10.0)
+ DEBUG [70ffc37b] 	 * mini_portile2 (2.5.3)
+ DEBUG [70ffc37b] 	 * racc (1.5.2)
+ DEBUG [70ffc37b] 	 * nokogiri (1.11.7)
+ * rails-dom-testing (2.0.3)
+ DEBUG [70ffc37b] 	 * crass (1.0.6)
+ DEBUG [70ffc37b] 	 * loofah (2.10.0)
+ DEBUG [70ffc37b] 	 * rails-html-sanitizer (1.3.0)
+ DEBUG [70ffc37b] 	 * actionview (5.2.6)
+ * rack (2.2.3)
+ DEBUG [70ffc37b] 	 * rack-test (1.1.0)
+ DEBUG [70ffc37b] 	 * actionpack (5.2.6)
+ DEBUG [70ffc37b] 	 * nio4r (2.5.7)
+ DEBUG [70ffc37b] 	 * websocket-extensions (0.1.5)
+ DEBUG [70ffc37b] 	 * websocket-driver (0.7.5)
+ DEBUG [70ffc37b] 	 * actioncable (5.2.6)
+ DEBUG [70ffc37b] 	 * globalid (0.4.2)
+ DEBUG [70ffc37b] 	 * activejob (5.2.6)
+ DEBUG [70ffc37b] 	 * mini_mime (1.1.0)
+ DEBUG [70ffc37b] 	 * mail (2.7.1)
+ DEBUG [70ffc37b] 	 * actionmailer (5.2.6)
+ DEBUG [70ffc37b] 	 * activemodel (5.2.6)
+ DEBUG [70ffc37b] 	 * arel (9.0.0)
+ DEBUG [70ffc37b] 	 * activerecord (5.2.6)
+ DEBUG [70ffc37b] 	 * marcel (1.0.1)
+ DEBUG [70ffc37b] 	 * activestorage (5.2.6)
+ DEBUG [70ffc37b] 	 * bcrypt (3.1.16)
+ DEBUG [70ffc37b] 	 * msgpack (1.4.2)
+ DEBUG [70ffc37b] 	 * bootsnap (1.7.5)
+ DEBUG [70ffc37b] 	 * execjs (2.8.1)
+ DEBUG [70ffc37b] 	 * ffi (1.15.3)
+ DEBUG [70ffc37b] 	 * jbuilder (2.11.2)
+ DEBUG [70ffc37b] 	 * method_source (1.0.0)
+ DEBUG [70ffc37b] 	 * mysql2 (0.4.10)
+ DEBUG [70ffc37b] 	 * pg (1.2.3)
+ DEBUG [70ffc37b] 	 * puma (3.12.6)
+ DEBUG [70ffc37b] 	 * rack-cors (1.1.1)
+ * rack-proxy (0.7.0)
+ * thor (1.1.0)
+ DEBUG [70ffc37b] 	 * railties (5.2.6)
+ * sprockets (3.7.2)
+ DEBUG [70ffc37b] 	 * sprockets-rails (3.2.2)
+ * rails (5.2.6)
+ DEBUG [70ffc37b] 	 * rb-fsevent (0.11.0)
+ * rb-inotify (0.10.1)
+ DEBUG [70ffc37b] 	 * sass-listen (4.0.0)
+ DEBUG [70ffc37b] 	 * sass (3.7.4)
+ DEBUG [70ffc37b] 	 * tilt (2.0.10)
+ DEBUG [70ffc37b] 	 * sass-rails (5.1.0)
+ * semantic_range (3.0.0)
+ DEBUG [70ffc37b] 	 * turbolinks-source (5.2.0)
+ DEBUG [70ffc37b] 	 * turbolinks (5.2.1)
+ DEBUG [70ffc37b] 	 * uglifier (4.2.0)
+ DEBUG [70ffc37b] 	 * webpacker (5.4.0)
+ DEBUG [70ffc37b] 	Install missing gems with `bundle install`
+ DEBUG [70ffc37b] Finished in 0.365 seconds with exit status 1 (failed).
+  INFO [8acd6c65] Running /usr/bin/env bundle install --jobs 4 --quiet as deploy@34.80.42.5
+ DEBUG [8acd6c65] Command: cd /home/deploy/graffiti/releases/20210807165816 && /usr/bin/env bundle install --jobs 4 --quiet
+ DEBUG [8acd6c65] 	You are trying to install in deployment mode after changing
+your Gemfile. Run `bundle install` elsewhere and add the
+updated Gemfile.lock to version control.
+
+If this is a development machine, remove the
+/home/deploy/graffiti/releases/20210807165816/Gemfile freeze
+by running `bundle config --delete deployment`.
+
+You have deleted from the Gemfile:
+* capistrano-bundler
+* capistrano-rbenv
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:59:44 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [16fd9767] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [16fd9767] Command: /usr/bin/env mkdir -p /tmp
+  INFO [16fd9767] Finished in 0.582 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-0beac945e9c3f006a65b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-0beac945e9c3f006a65b.sh 100.0%
+  INFO [cb10e8ec] Running /usr/bin/env chmod 700 /tmp/git-ssh-0beac945e9c3f006a65b.sh as deploy@34.80.42.5
+ DEBUG [cb10e8ec] Command: /usr/bin/env chmod 700 /tmp/git-ssh-0beac945e9c3f006a65b.sh
+  INFO [cb10e8ec] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [82c4556c] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [82c4556c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0beac945e9c3f006a65b.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [82c4556c] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6	HEAD
+  INFO [82c4556c] Finished in 2.338 seconds with exit status 0 (successful).
+  INFO [d44434e7] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [d44434e7] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases
+  INFO [d44434e7] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [24fe6ff4] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [24fe6ff4] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets
+  INFO [24fe6ff4] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [750f2e02] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [750f2e02] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config
+  INFO [750f2e02] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [51ecffd4] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [51ecffd4] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [51ecffd4] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [f5f6bab1] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [f5f6bab1] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [f5f6bab1] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [9b3073ad] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [9b3073ad] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [9b3073ad] Finished in 0.127 seconds with exit status 1 (failed).
+ DEBUG [a26f6dc0] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [a26f6dc0] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [a26f6dc0] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/graffiti/repo
+ DEBUG [ba1898c7] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [ba1898c7] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [ba1898c7] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [ee00b8d2] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [ee00b8d2] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0beac945e9c3f006a65b.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [ee00b8d2] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [207e1c42] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [207e1c42] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0beac945e9c3f006a65b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [207e1c42] 	Fetching origin
+  INFO [207e1c42] Finished in 2.548 seconds with exit status 0 (successful).
+ DEBUG [d6b439b6] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [d6b439b6] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [d6b439b6] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [cbcb89f0] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165952 as deploy@34.80.42.5
+ DEBUG [cbcb89f0] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0beac945e9c3f006a65b.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165952 )
+  INFO [cbcb89f0] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [a80a060a] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807165952 as deploy@34.80.42.5
+ DEBUG [a80a060a] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0beac945e9c3f006a65b.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807165952 )
+  INFO [a80a060a] Finished in 3.627 seconds with exit status 0 (successful).
+ DEBUG [024854ce] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [024854ce] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [024854ce] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [69aa5727] Running /usr/bin/env git rev-list --max-count=1 main as deploy@34.80.42.5
+ DEBUG [69aa5727] Command: cd /home/deploy/graffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0beac945e9c3f006a65b.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [69aa5727] 	f3b038a44a2335eb6873bc8a8d58b9e219af65c6
+ DEBUG [69aa5727] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [df1e86d3] Running if test ! -d /home/deploy/graffiti/releases/20210807165952; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165952'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [df1e86d3] Command: if test ! -d /home/deploy/graffiti/releases/20210807165952; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165952'" 1>&2; false; fi
+ DEBUG [df1e86d3] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [1f6e3c28] Running /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION as deploy@34.80.42.5
+ DEBUG [1f6e3c28] Command: cd /home/deploy/graffiti/releases/20210807165952 && /usr/bin/env echo "f3b038a44a2335eb6873bc8a8d58b9e219af65c6" > REVISION
+  INFO [1f6e3c28] Finished in 0.229 seconds with exit status 0 (successful).
+  INFO [361d7629] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165952/config as deploy@34.80.42.5
+ DEBUG [361d7629] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165952/config
+  INFO [361d7629] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [8f41a484] Running [ -L /home/deploy/graffiti/releases/20210807165952/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [8f41a484] Command: [ -L /home/deploy/graffiti/releases/20210807165952/config/database.yml ]
+ DEBUG [8f41a484] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [f3f79011] Running [ -f /home/deploy/graffiti/releases/20210807165952/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [f3f79011] Command: [ -f /home/deploy/graffiti/releases/20210807165952/config/database.yml ]
+ DEBUG [f3f79011] Finished in 0.111 seconds with exit status 0 (successful).
+  INFO [71d95fb1] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807165952/config/database.yml as deploy@34.80.42.5
+ DEBUG [71d95fb1] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807165952/config/database.yml
+  INFO [71d95fb1] Finished in 0.121 seconds with exit status 0 (successful).
+  INFO [2135d839] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807165952/config/database.yml as deploy@34.80.42.5
+ DEBUG [2135d839] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807165952/config/database.yml
+  INFO [2135d839] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [8a0112d2] Running [ -L /home/deploy/graffiti/releases/20210807165952/config/master.key ] as deploy@34.80.42.5
+ DEBUG [8a0112d2] Command: [ -L /home/deploy/graffiti/releases/20210807165952/config/master.key ]
+ DEBUG [8a0112d2] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [b8710fe9] Running [ -f /home/deploy/graffiti/releases/20210807165952/config/master.key ] as deploy@34.80.42.5
+ DEBUG [b8710fe9] Command: [ -f /home/deploy/graffiti/releases/20210807165952/config/master.key ]
+ DEBUG [b8710fe9] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [8cfb5120] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807165952/config/master.key as deploy@34.80.42.5
+ DEBUG [8cfb5120] Command: /usr/bin/env rm /home/deploy/graffiti/releases/20210807165952/config/master.key
+  INFO [8cfb5120] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO [70830e51] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807165952/config/master.key as deploy@34.80.42.5
+ DEBUG [70830e51] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807165952/config/master.key
+  INFO [70830e51] Finished in 0.119 seconds with exit status 0 (successful).
+  INFO [b69705dc] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165952 /home/deploy/graffiti/releases/20210807165952/tmp /home/deploy/graffiti/releases/20210807165952/public as deploy@34.80.42.5
+ DEBUG [b69705dc] Command: /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807165952 /home/deploy/graffiti/releases/20210807165952/tmp /home/deploy/graffiti/releases/20210807165952/public
+  INFO [b69705dc] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [996264dc] Running [ -L /home/deploy/graffiti/releases/20210807165952/log ] as deploy@34.80.42.5
+ DEBUG [996264dc] Command: [ -L /home/deploy/graffiti/releases/20210807165952/log ]
+ DEBUG [996264dc] Finished in 0.119 seconds with exit status 1 (failed).
+ DEBUG [b4907126] Running [ -d /home/deploy/graffiti/releases/20210807165952/log ] as deploy@34.80.42.5
+ DEBUG [b4907126] Command: [ -d /home/deploy/graffiti/releases/20210807165952/log ]
+ DEBUG [b4907126] Finished in 0.119 seconds with exit status 0 (successful).
+  INFO [311b97e9] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165952/log as deploy@34.80.42.5
+ DEBUG [311b97e9] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165952/log
+  INFO [311b97e9] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [1e5b6cf1] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807165952/log as deploy@34.80.42.5
+ DEBUG [1e5b6cf1] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807165952/log
+  INFO [1e5b6cf1] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [269fe07a] Running [ -L /home/deploy/graffiti/releases/20210807165952/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [269fe07a] Command: [ -L /home/deploy/graffiti/releases/20210807165952/tmp/pids ]
+ DEBUG [269fe07a] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [8b4ff12a] Running [ -d /home/deploy/graffiti/releases/20210807165952/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [8b4ff12a] Command: [ -d /home/deploy/graffiti/releases/20210807165952/tmp/pids ]
+ DEBUG [8b4ff12a] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [49378f2d] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165952/tmp/pids as deploy@34.80.42.5
+ DEBUG [49378f2d] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165952/tmp/pids
+  INFO [49378f2d] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [ada23307] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807165952/tmp/pids as deploy@34.80.42.5
+ DEBUG [ada23307] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807165952/tmp/pids
+  INFO [ada23307] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [2a51d3cb] Running [ -L /home/deploy/graffiti/releases/20210807165952/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [2a51d3cb] Command: [ -L /home/deploy/graffiti/releases/20210807165952/tmp/cache ]
+ DEBUG [2a51d3cb] Finished in 0.095 seconds with exit status 1 (failed).
+ DEBUG [87c9a23a] Running [ -d /home/deploy/graffiti/releases/20210807165952/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [87c9a23a] Command: [ -d /home/deploy/graffiti/releases/20210807165952/tmp/cache ]
+ DEBUG [87c9a23a] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [7d14c044] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165952/tmp/cache as deploy@34.80.42.5
+ DEBUG [7d14c044] Command: /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807165952/tmp/cache
+  INFO [7d14c044] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [1e67b779] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807165952/tmp/cache as deploy@34.80.42.5
+ DEBUG [1e67b779] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807165952/tmp/cache
+  INFO [1e67b779] Finished in 0.217 seconds with exit status 0 (successful).
+ DEBUG [00d27519] Running [ -L /home/deploy/graffiti/releases/20210807165952/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [00d27519] Command: [ -L /home/deploy/graffiti/releases/20210807165952/tmp/sockets ]
+ DEBUG [00d27519] Finished in 0.134 seconds with exit status 1 (failed).
+ DEBUG [552f2395] Running [ -d /home/deploy/graffiti/releases/20210807165952/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [552f2395] Command: [ -d /home/deploy/graffiti/releases/20210807165952/tmp/sockets ]
+ DEBUG [552f2395] Finished in 0.212 seconds with exit status 1 (failed).
+  INFO [b840f9b8] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807165952/tmp/sockets as deploy@34.80.42.5
+ DEBUG [b840f9b8] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807165952/tmp/sockets
+  INFO [b840f9b8] Finished in 0.205 seconds with exit status 0 (successful).
+ DEBUG [e6a8ac38] Running [ -L /home/deploy/graffiti/releases/20210807165952/public/system ] as deploy@34.80.42.5
+ DEBUG [e6a8ac38] Command: [ -L /home/deploy/graffiti/releases/20210807165952/public/system ]
+ DEBUG [e6a8ac38] Finished in 0.120 seconds with exit status 1 (failed).
+ DEBUG [4c66e076] Running [ -d /home/deploy/graffiti/releases/20210807165952/public/system ] as deploy@34.80.42.5
+ DEBUG [4c66e076] Command: [ -d /home/deploy/graffiti/releases/20210807165952/public/system ]
+ DEBUG [4c66e076] Finished in 0.114 seconds with exit status 1 (failed).
+  INFO [af0c90b5] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807165952/public/system as deploy@34.80.42.5
+ DEBUG [af0c90b5] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807165952/public/system
+  INFO [af0c90b5] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [e1423129] Running [ -L /home/deploy/graffiti/releases/20210807165952/public/assets ] as deploy@34.80.42.5
+ DEBUG [e1423129] Command: [ -L /home/deploy/graffiti/releases/20210807165952/public/assets ]
+ DEBUG [e1423129] Finished in 0.114 seconds with exit status 1 (failed).
+ DEBUG [2a393a57] Running [ -d /home/deploy/graffiti/releases/20210807165952/public/assets ] as deploy@34.80.42.5
+ DEBUG [2a393a57] Command: [ -d /home/deploy/graffiti/releases/20210807165952/public/assets ]
+ DEBUG [2a393a57] Finished in 0.123 seconds with exit status 1 (failed).
+  INFO [332014f5] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807165952/public/assets as deploy@34.80.42.5
+ DEBUG [332014f5] Command: /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807165952/public/assets
+  INFO [332014f5] Finished in 0.118 seconds with exit status 0 (successful).
+ DEBUG [7f711b55] Running if test ! -d /home/deploy/graffiti/releases/20210807165952; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165952'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [7f711b55] Command: if test ! -d /home/deploy/graffiti/releases/20210807165952; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165952'" 1>&2; false; fi
+ DEBUG [7f711b55] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [1f2f4c3f] Running /usr/bin/env bundle config --local deployment true as deploy@34.80.42.5
+ DEBUG [1f2f4c3f] Command: cd /home/deploy/graffiti/releases/20210807165952 && /usr/bin/env bundle config --local deployment true
+ DEBUG [1f2f4c3f] 	You are replacing the current local value of deployment, which is currently nil
+  INFO [1f2f4c3f] Finished in 0.275 seconds with exit status 0 (successful).
+  INFO [1ca1c10f] Running /usr/bin/env bundle config --local path /home/deploy/graffiti/shared/bundle as deploy@34.80.42.5
+ DEBUG [1ca1c10f] Command: cd /home/deploy/graffiti/releases/20210807165952 && /usr/bin/env bundle config --local path /home/deploy/graffiti/shared/bundle
+ DEBUG [1ca1c10f] 	You are replacing the current local value of path, which is currently nil
+  INFO [1ca1c10f] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [3140f231] Running /usr/bin/env bundle config --local without development:test as deploy@34.80.42.5
+ DEBUG [3140f231] Command: cd /home/deploy/graffiti/releases/20210807165952 && /usr/bin/env bundle config --local without development:test
+ DEBUG [3140f231] 	You are replacing the current local value of without, which is currently nil
+  INFO [3140f231] Finished in 0.258 seconds with exit status 0 (successful).
+ DEBUG [d07099bc] Running if test ! -d /home/deploy/graffiti/releases/20210807165952; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165952'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [d07099bc] Command: if test ! -d /home/deploy/graffiti/releases/20210807165952; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807165952'" 1>&2; false; fi
+ DEBUG [d07099bc] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [9a2accb7] Running /usr/bin/env bundle check as deploy@34.80.42.5
+ DEBUG [9a2accb7] Command: cd /home/deploy/graffiti/releases/20210807165952 && /usr/bin/env bundle check
+ DEBUG [9a2accb7] 	Warning: the running version of Bundler (1.17.2) is older than the version that created the lockfile (1.17.3). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+ DEBUG [9a2accb7] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [9a2accb7] 	The following gems are missing
+ * rake (13.0.6)
+ * concurrent-ruby (1.1.9)
+ * i18n (1.8.10)
+ DEBUG [9a2accb7] 	 * minitest (5.14.4)
+ DEBUG [9a2accb7] 	 * thread_safe (0.3.6)
+ * tzinfo (1.2.9)
+ * activesupport (5.2.6)
+ DEBUG [9a2accb7] 	 * builder (3.2.4)
+ DEBUG [9a2accb7] 	 * erubi (1.10.0)
+ DEBUG [9a2accb7] 	 * mini_portile2 (2.5.3)
+ DEBUG [9a2accb7] 	 * racc (1.5.2)
+ DEBUG [9a2accb7] 	 * nokogiri (1.11.7)
+ DEBUG [9a2accb7] 	 * rails-dom-testing (2.0.3)
+ DEBUG [9a2accb7] 	 * crass (1.0.6)
+ DEBUG [9a2accb7] 	 * loofah (2.10.0)
+ DEBUG [9a2accb7] 	 * rails-html-sanitizer (1.3.0)
+ DEBUG [9a2accb7] 	 * actionview (5.2.6)
+ DEBUG [9a2accb7] 	 * rack (2.2.3)
+ DEBUG [9a2accb7] 	 * rack-test (1.1.0)
+ DEBUG [9a2accb7] 	 * actionpack (5.2.6)
+ * nio4r (2.5.7)
+ DEBUG [9a2accb7] 	 * websocket-extensions (0.1.5)
+ DEBUG [9a2accb7] 	 * websocket-driver (0.7.5)
+ * actioncable (5.2.6)
+ DEBUG [9a2accb7] 	 * globalid (0.4.2)
+ DEBUG [9a2accb7] 	 * activejob (5.2.6)
+ DEBUG [9a2accb7] 	 * mini_mime (1.1.0)
+ DEBUG [9a2accb7] 	 * mail (2.7.1)
+ DEBUG [9a2accb7] 	 * actionmailer (5.2.6)
+ DEBUG [9a2accb7] 	 * activemodel (5.2.6)
+ DEBUG [9a2accb7] 	 * arel (9.0.0)
+ DEBUG [9a2accb7] 	 * activerecord (5.2.6)
+ DEBUG [9a2accb7] 	 * marcel (1.0.1)
+ DEBUG [9a2accb7] 	 * activestorage (5.2.6)
+ DEBUG [9a2accb7] 	 * bcrypt (3.1.16)
+ DEBUG [9a2accb7] 	 * msgpack (1.4.2)
+ DEBUG [9a2accb7] 	 * bootsnap (1.7.5)
+ DEBUG [9a2accb7] 	 * execjs (2.8.1)
+ * ffi (1.15.3)
+ * jbuilder (2.11.2)
+ DEBUG [9a2accb7] 	 * method_source (1.0.0)
+ DEBUG [9a2accb7] 	 * mysql2 (0.4.10)
+ DEBUG [9a2accb7] 	 * pg (1.2.3)
+ DEBUG [9a2accb7] 	 * puma (3.12.6)
+ * rack-cors (1.1.1)
+ DEBUG [9a2accb7] 	 * rack-proxy (0.7.0)
+ DEBUG [9a2accb7] 	 * thor (1.1.0)
+ DEBUG [9a2accb7] 	 * railties (5.2.6)
+ DEBUG [9a2accb7] 	 * sprockets (3.7.2)
+ DEBUG [9a2accb7] 	 * sprockets-rails (3.2.2)
+ DEBUG [9a2accb7] 	 * rails (5.2.6)
+ DEBUG [9a2accb7] 	 * rb-fsevent (0.11.0)
+ DEBUG [9a2accb7] 	 * rb-inotify (0.10.1)
+ DEBUG [9a2accb7] 	 * sass-listen (4.0.0)
+ DEBUG [9a2accb7] 	 * sass (3.7.4)
+ DEBUG [9a2accb7] 	 * tilt (2.0.10)
+ DEBUG [9a2accb7] 	 * sass-rails (5.1.0)
+ * semantic_range (3.0.0)
+ DEBUG [9a2accb7] 	 * turbolinks-source (5.2.0)
+ DEBUG [9a2accb7] 	 * turbolinks (5.2.1)
+ DEBUG [9a2accb7] 	 * uglifier (4.2.0)
+ DEBUG [9a2accb7] 	 * webpacker (5.4.0)
+ DEBUG [9a2accb7] 	Install missing gems with `bundle install`
+ DEBUG [9a2accb7] Finished in 0.366 seconds with exit status 1 (failed).
+  INFO [621854f8] Running /usr/bin/env bundle install --jobs 4 --quiet as deploy@34.80.42.5
+ DEBUG [621854f8] Command: cd /home/deploy/graffiti/releases/20210807165952 && /usr/bin/env bundle install --jobs 4 --quiet
+ DEBUG [621854f8] 	You are trying to install in deployment mode after changing
+your Gemfile. Run `bundle install` elsewhere and add the
+updated Gemfile.lock to version control.
+
+If this is a development machine, remove the
+/home/deploy/graffiti/releases/20210807165952/Gemfile freeze
+by running `bundle config --delete deployment`.
+
+You have deleted from the Gemfile:
+* capistrano-bundler
+* capistrano-rbenv
