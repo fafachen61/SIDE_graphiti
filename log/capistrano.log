@@ -1,0 +1,30 @@
+# Logfile created on 2021-08-07 15:43:15 +0800 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-07 15:43:15 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [bea5cece] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [bea5cece] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bea5cece] Finished in 0.684 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e9928db1d73a2460c98b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e9928db1d73a2460c98b.sh 100.0%
+  INFO [1e6348d2] Running /usr/bin/env chmod 700 /tmp/git-ssh-e9928db1d73a2460c98b.sh as deploy@34.80.42.5
+ DEBUG [1e6348d2] Command: /usr/bin/env chmod 700 /tmp/git-ssh-e9928db1d73a2460c98b.sh
+  INFO [1e6348d2] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [003ae14e] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [003ae14e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e9928db1d73a2460c98b.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [003ae14e] 	Warning: Permanently added 'github.com,13.114.40.48' (RSA) to the list of known hosts.
+ DEBUG [003ae14e] 	83fb6d3dbb158c508b89b40d63d286b323b146cd	HEAD
+  INFO [003ae14e] Finished in 2.457 seconds with exit status 0 (successful).
+  INFO [8851bdb9] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases as deploy@34.80.42.5
+ DEBUG [8851bdb9] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases
+  INFO [8851bdb9] Finished in 0.182 seconds with exit status 0 (successful).
+  INFO [64240a29] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [64240a29] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets
+  INFO [64240a29] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [451505de] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config as deploy@34.80.42.5
+ DEBUG [451505de] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config
+  INFO [451505de] Finished in 0.175 seconds with exit status 0 (successful).
+ DEBUG [71da405b] Running [ -f /home/deploy/mygraffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [71da405b] Command: [ -f /home/deploy/mygraffiti/shared/config/database.yml ]
+ DEBUG [71da405b] Finished in 0.231 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/mygraffiti/shared/config/database.yml does not exist on 34.80.42.5
