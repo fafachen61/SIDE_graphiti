@@ -28,3 +28,216 @@
  DEBUG [71da405b] Command: [ -f /home/deploy/mygraffiti/shared/config/database.yml ]
  DEBUG [71da405b] Finished in 0.231 seconds with exit status 1 (failed).
  ERROR linked file /home/deploy/mygraffiti/shared/config/database.yml does not exist on 34.80.42.5
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-07 15:50:02 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [94acc931] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [94acc931] Command: /usr/bin/env mkdir -p /tmp
+  INFO [94acc931] Finished in 0.697 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e6fd7033c92a7e306b77.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e6fd7033c92a7e306b77.sh 100.0%
+  INFO [5e29c38b] Running /usr/bin/env chmod 700 /tmp/git-ssh-e6fd7033c92a7e306b77.sh as deploy@34.80.42.5
+ DEBUG [5e29c38b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-e6fd7033c92a7e306b77.sh
+  INFO [5e29c38b] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [12ba1f2c] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [12ba1f2c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6fd7033c92a7e306b77.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [12ba1f2c] 	Warning: Permanently added the RSA host key for IP address '52.192.72.89' to the list of known hosts.
+ DEBUG [12ba1f2c] 	9044bc4ae98931e2193a16ec7bc031f19e67f47e	HEAD
+  INFO [12ba1f2c] Finished in 2.472 seconds with exit status 0 (successful).
+  INFO [91faecb9] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases as deploy@34.80.42.5
+ DEBUG [91faecb9] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases
+  INFO [91faecb9] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [708a0c85] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [708a0c85] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets
+  INFO [708a0c85] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [1c8aebf7] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config as deploy@34.80.42.5
+ DEBUG [1c8aebf7] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config
+  INFO [1c8aebf7] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [bf167835] Running [ -f /home/deploy/mygraffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [bf167835] Command: [ -f /home/deploy/mygraffiti/shared/config/database.yml ]
+ DEBUG [bf167835] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [b7089e7f] Running [ -f /home/deploy/mygraffiti/shared/config/secrets.yml ] as deploy@34.80.42.5
+ DEBUG [b7089e7f] Command: [ -f /home/deploy/mygraffiti/shared/config/secrets.yml ]
+ DEBUG [b7089e7f] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [5a28e755] Running [ -f /home/deploy/mygraffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [5a28e755] Command: [ -f /home/deploy/mygraffiti/current/REVISION ]
+ DEBUG [5a28e755] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [e0d1939e] Running [ -f /home/deploy/mygraffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [e0d1939e] Command: [ -f /home/deploy/mygraffiti/repo/HEAD ]
+ DEBUG [e0d1939e] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [3d7c78a6] Running if test ! -d /home/deploy/mygraffiti; then echo "Directory does not exist '/home/deploy/mygraffiti'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [3d7c78a6] Command: if test ! -d /home/deploy/mygraffiti; then echo "Directory does not exist '/home/deploy/mygraffiti'" 1>&2; false; fi
+ DEBUG [3d7c78a6] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [56ae551e] Running /usr/bin/env git clone --mirror git@github.com:fafachen61/SIDE_graphiti.git /home/deploy/mygraffiti/repo as deploy@34.80.42.5
+ DEBUG [56ae551e] Command: cd /home/deploy/mygraffiti && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6fd7033c92a7e306b77.sh" ; /usr/bin/env git clone --mirror git@github.com:fafachen61/SIDE_graphiti.git /home/deploy/mygraffiti/repo )
+ DEBUG [56ae551e] 	Cloning into bare repository '/home/deploy/mygraffiti/repo'...
+  INFO [56ae551e] Finished in 8.731 seconds with exit status 0 (successful).
+ DEBUG [377bf331] Running if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [377bf331] Command: if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi
+ DEBUG [377bf331] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [a8f69a26] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [a8f69a26] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6fd7033c92a7e306b77.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [a8f69a26] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [65425678] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [65425678] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6fd7033c92a7e306b77.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [65425678] 	Fetching origin
+  INFO [65425678] Finished in 2.312 seconds with exit status 0 (successful).
+ DEBUG [16f34f4c] Running if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [16f34f4c] Command: if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi
+ DEBUG [16f34f4c] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [104b386b] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/releases/20210807075007 as deploy@34.80.42.5
+ DEBUG [104b386b] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6fd7033c92a7e306b77.sh" ; /usr/bin/env mkdir -p /home/deploy/mygraffiti/releases/20210807075007 )
+  INFO [104b386b] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [f933bced] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/mygraffiti/releases/20210807075007 as deploy@34.80.42.5
+ DEBUG [f933bced] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e6fd7033c92a7e306b77.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/mygraffiti/releases/20210807075007 )
+ DEBUG [f933bced] 	fatal: Not a valid object name
+ DEBUG [f933bced] 	tar: This does not look like a tar archive
+tar: Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-07 15:51:40 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [5012b193] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [5012b193] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5012b193] Finished in 0.666 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-941a48354f74e43b635d.sh 0.0%
+  INFO Uploading /tmp/git-ssh-941a48354f74e43b635d.sh 100.0%
+  INFO [cdd3e24f] Running /usr/bin/env chmod 700 /tmp/git-ssh-941a48354f74e43b635d.sh as deploy@34.80.42.5
+ DEBUG [cdd3e24f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-941a48354f74e43b635d.sh
+  INFO [cdd3e24f] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [f9b82d6d] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [f9b82d6d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-941a48354f74e43b635d.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [f9b82d6d] 	9044bc4ae98931e2193a16ec7bc031f19e67f47e	HEAD
+  INFO [f9b82d6d] Finished in 2.414 seconds with exit status 0 (successful).
+  INFO [f31f8c0e] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases as deploy@34.80.42.5
+ DEBUG [f31f8c0e] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases
+  INFO [f31f8c0e] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [2ca676f8] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [2ca676f8] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets
+  INFO [2ca676f8] Finished in 0.188 seconds with exit status 0 (successful).
+  INFO [9cddae6f] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config as deploy@34.80.42.5
+ DEBUG [9cddae6f] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config
+  INFO [9cddae6f] Finished in 0.170 seconds with exit status 0 (successful).
+ DEBUG [24468d94] Running [ -f /home/deploy/mygraffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [24468d94] Command: [ -f /home/deploy/mygraffiti/shared/config/database.yml ]
+ DEBUG [24468d94] Finished in 0.165 seconds with exit status 0 (successful).
+ DEBUG [68aab71e] Running [ -f /home/deploy/mygraffiti/shared/config/secrets.yml ] as deploy@34.80.42.5
+ DEBUG [68aab71e] Command: [ -f /home/deploy/mygraffiti/shared/config/secrets.yml ]
+ DEBUG [68aab71e] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-07 15:51:50 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f1416934] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [f1416934] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f1416934] Finished in 0.639 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-47e49724b775de50f0ca.sh 0.0%
+  INFO Uploading /tmp/git-ssh-47e49724b775de50f0ca.sh 100.0%
+  INFO [b332a508] Running /usr/bin/env chmod 700 /tmp/git-ssh-47e49724b775de50f0ca.sh as deploy@34.80.42.5
+ DEBUG [b332a508] Command: /usr/bin/env chmod 700 /tmp/git-ssh-47e49724b775de50f0ca.sh
+  INFO [b332a508] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [2188500d] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [2188500d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-47e49724b775de50f0ca.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [2188500d] 	Warning: Permanently added the RSA host key for IP address '52.69.186.44' to the list of known hosts.
+ DEBUG [2188500d] 	9044bc4ae98931e2193a16ec7bc031f19e67f47e	HEAD
+  INFO [2188500d] Finished in 2.339 seconds with exit status 0 (successful).
+  INFO [f4f2da2e] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases as deploy@34.80.42.5
+ DEBUG [f4f2da2e] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases
+  INFO [f4f2da2e] Finished in 0.587 seconds with exit status 0 (successful).
+  INFO [a987bcbe] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [a987bcbe] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets
+  INFO [a987bcbe] Finished in 0.111 seconds with exit status 0 (successful).
+  INFO [62619deb] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config as deploy@34.80.42.5
+ DEBUG [62619deb] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config
+  INFO [62619deb] Finished in 0.524 seconds with exit status 0 (successful).
+ DEBUG [696895cd] Running [ -f /home/deploy/mygraffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [696895cd] Command: [ -f /home/deploy/mygraffiti/shared/config/database.yml ]
+ DEBUG [696895cd] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [0921a315] Running [ -f /home/deploy/mygraffiti/shared/config/secrets.yml ] as deploy@34.80.42.5
+ DEBUG [0921a315] Command: [ -f /home/deploy/mygraffiti/shared/config/secrets.yml ]
+ DEBUG [0921a315] Finished in 0.134 seconds with exit status 0 (successful).
+ DEBUG [e80ad928] Running [ -f /home/deploy/mygraffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [e80ad928] Command: [ -f /home/deploy/mygraffiti/current/REVISION ]
+ DEBUG [e80ad928] Finished in 0.142 seconds with exit status 1 (failed).
+ DEBUG [d452988c] Running [ -f /home/deploy/mygraffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [d452988c] Command: [ -f /home/deploy/mygraffiti/repo/HEAD ]
+ DEBUG [d452988c] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/mygraffiti/repo
+ DEBUG [528ae500] Running if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [528ae500] Command: if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi
+ DEBUG [528ae500] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [03d98a50] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [03d98a50] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-47e49724b775de50f0ca.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [03d98a50] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [8c81be2a] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [8c81be2a] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-47e49724b775de50f0ca.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8c81be2a] 	Fetching origin
+ DEBUG [8c81be2a] 	Warning: Permanently added the RSA host key for IP address '192.30.255.112' to the list of known hosts.
+  INFO [8c81be2a] Finished in 2.493 seconds with exit status 0 (successful).
+ DEBUG [13dfd1ff] Running if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [13dfd1ff] Command: if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi
+ DEBUG [13dfd1ff] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [3b21f20d] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/releases/20210807075155 as deploy@34.80.42.5
+ DEBUG [3b21f20d] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-47e49724b775de50f0ca.sh" ; /usr/bin/env mkdir -p /home/deploy/mygraffiti/releases/20210807075155 )
+  INFO [3b21f20d] Finished in 0.120 seconds with exit status 0 (successful).
+  INFO [5afb53f4] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/mygraffiti/releases/20210807075155 as deploy@34.80.42.5
+ DEBUG [5afb53f4] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-47e49724b775de50f0ca.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/mygraffiti/releases/20210807075155 )
+ DEBUG [5afb53f4] 	fatal: Not a valid object name
+ DEBUG [5afb53f4] 	tar: This does not look like a tar archive
+tar: Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-07 16:00:20 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [61124370] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [61124370] Command: /usr/bin/env mkdir -p /tmp
+  INFO [61124370] Finished in 0.624 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-6318bcfe745d14841f5a.sh 0.0%
+  INFO Uploading /tmp/git-ssh-6318bcfe745d14841f5a.sh 100.0%
+  INFO [52d2e998] Running /usr/bin/env chmod 700 /tmp/git-ssh-6318bcfe745d14841f5a.sh as deploy@34.80.42.5
+ DEBUG [52d2e998] Command: /usr/bin/env chmod 700 /tmp/git-ssh-6318bcfe745d14841f5a.sh
+  INFO [52d2e998] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [91313b3f] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [91313b3f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6318bcfe745d14841f5a.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [91313b3f] 	9044bc4ae98931e2193a16ec7bc031f19e67f47e	HEAD
+  INFO [91313b3f] Finished in 2.402 seconds with exit status 0 (successful).
+  INFO [1f1acac8] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases as deploy@34.80.42.5
+ DEBUG [1f1acac8] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases
+  INFO [1f1acac8] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [7c257216] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [7c257216] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets
+  INFO [7c257216] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [be65bbb7] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config as deploy@34.80.42.5
+ DEBUG [be65bbb7] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config
+  INFO [be65bbb7] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [cbb3b54e] Running [ -f /home/deploy/mygraffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [cbb3b54e] Command: [ -f /home/deploy/mygraffiti/shared/config/database.yml ]
+ DEBUG [cbb3b54e] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [2e19b3ed] Running [ -f /home/deploy/mygraffiti/shared/config/secrets.yml ] as deploy@34.80.42.5
+ DEBUG [2e19b3ed] Command: [ -f /home/deploy/mygraffiti/shared/config/secrets.yml ]
+ DEBUG [2e19b3ed] Finished in 0.166 seconds with exit status 0 (successful).
+ DEBUG [6fac6bb5] Running [ -f /home/deploy/mygraffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [6fac6bb5] Command: [ -f /home/deploy/mygraffiti/current/REVISION ]
+ DEBUG [6fac6bb5] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [1e33292d] Running [ -f /home/deploy/mygraffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [1e33292d] Command: [ -f /home/deploy/mygraffiti/repo/HEAD ]
+ DEBUG [1e33292d] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/mygraffiti/repo
+ DEBUG [e99232f6] Running if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [e99232f6] Command: if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi
+ DEBUG [e99232f6] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [67ba7ebd] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [67ba7ebd] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6318bcfe745d14841f5a.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [67ba7ebd] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [6c7bc7d2] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [6c7bc7d2] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6318bcfe745d14841f5a.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [6c7bc7d2] 	Fetching origin
+  INFO [6c7bc7d2] Finished in 2.369 seconds with exit status 0 (successful).
+ DEBUG [4527f8ab] Running if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [4527f8ab] Command: if test ! -d /home/deploy/mygraffiti/repo; then echo "Directory does not exist '/home/deploy/mygraffiti/repo'" 1>&2; false; fi
+ DEBUG [4527f8ab] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [54f9694b] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/releases/20210807080025 as deploy@34.80.42.5
+ DEBUG [54f9694b] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6318bcfe745d14841f5a.sh" ; /usr/bin/env mkdir -p /home/deploy/mygraffiti/releases/20210807080025 )
+  INFO [54f9694b] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [6e8be44e] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/mygraffiti/releases/20210807080025 as deploy@34.80.42.5
+ DEBUG [6e8be44e] Command: cd /home/deploy/mygraffiti/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6318bcfe745d14841f5a.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/mygraffiti/releases/20210807080025 )
+ DEBUG [6e8be44e] 	fatal: Not a valid object name
+ DEBUG [6e8be44e] 	tar: This does not look like a tar archive
+tar: Exiting with failure status due to previous errors
