@@ -272,3 +272,314 @@ tar: Exiting with failure status due to previous errors
  DEBUG [29b0bef6] Command: [ -f /home/deploy/mygraffiti/shared/config/master.key ]
  DEBUG [29b0bef6] Finished in 0.112 seconds with exit status 1 (failed).
  ERROR linked file /home/deploy/mygraffiti/shared/config/master.key does not exist on 34.80.42.5
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-07 23:55:40 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG [1d71ca84] Running /usr/bin/env which passenger as deploy@34.80.42.5
+ DEBUG [1d71ca84] Command: /usr/bin/env which passenger
+ DEBUG [1d71ca84] 	/usr/bin/passenger
+ DEBUG [1d71ca84] Finished in 0.936 seconds with exit status 0 (successful).
+  INFO [715c6281] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [715c6281] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [715c6281] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2b51c9d99bf77d54c71e.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2b51c9d99bf77d54c71e.sh 100.0%
+  INFO [9e45d029] Running /usr/bin/env chmod 700 /tmp/git-ssh-2b51c9d99bf77d54c71e.sh as deploy@34.80.42.5
+ DEBUG [9e45d029] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-2b51c9d99bf77d54c71e.sh )
+  INFO [9e45d029] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [d1d499e9] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [d1d499e9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2b51c9d99bf77d54c71e.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [d1d499e9] 	23268a9c550f17ef04a70d3849a51a07f3780761	HEAD
+  INFO [d1d499e9] Finished in 2.152 seconds with exit status 0 (successful).
+  INFO [9e7e1190] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [9e7e1190] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases )
+  INFO [9e7e1190] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [980b8548] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [980b8548] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets )
+  INFO [980b8548] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [a077150e] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [a077150e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config )
+  INFO [a077150e] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [488d39c2] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [488d39c2] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [488d39c2] Finished in 0.128 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/graffiti/shared/config/database.yml does not exist on 34.80.42.5
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:00:16 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG [0c17d67c] Running /usr/bin/env which passenger as deploy@34.80.42.5
+ DEBUG [0c17d67c] Command: /usr/bin/env which passenger
+ DEBUG [0c17d67c] 	/usr/bin/passenger
+ DEBUG [0c17d67c] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [876e1a45] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [876e1a45] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [876e1a45] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-342f06bad52aec74e1a9.sh 0.0%
+  INFO Uploading /tmp/git-ssh-342f06bad52aec74e1a9.sh 100.0%
+  INFO [e906ab31] Running /usr/bin/env chmod 700 /tmp/git-ssh-342f06bad52aec74e1a9.sh as deploy@34.80.42.5
+ DEBUG [e906ab31] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-342f06bad52aec74e1a9.sh )
+  INFO [e906ab31] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [4eed33fd] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [4eed33fd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-342f06bad52aec74e1a9.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [4eed33fd] 	23268a9c550f17ef04a70d3849a51a07f3780761	HEAD
+  INFO [4eed33fd] Finished in 2.519 seconds with exit status 0 (successful).
+  INFO [6d2ec770] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [6d2ec770] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases )
+  INFO [6d2ec770] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [49906166] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [49906166] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets )
+  INFO [49906166] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO [874edc86] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [874edc86] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config )
+  INFO [874edc86] Finished in 0.168 seconds with exit status 0 (successful).
+ DEBUG [6ed71e53] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [6ed71e53] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [6ed71e53] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [ce34b871] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [ce34b871] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [ce34b871] Finished in 0.097 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/graffiti/shared/config/master.key does not exist on 34.80.42.5
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:02:08 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG [31a3d594] Running /usr/bin/env which passenger as deploy@34.80.42.5
+ DEBUG [31a3d594] Command: /usr/bin/env which passenger
+ DEBUG [31a3d594] 	/usr/bin/passenger
+ DEBUG [31a3d594] Finished in 0.572 seconds with exit status 0 (successful).
+  INFO [65494131] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [65494131] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [65494131] Finished in 0.494 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-db919fcdc713c2f6dec1.sh 0.0%
+  INFO Uploading /tmp/git-ssh-db919fcdc713c2f6dec1.sh 100.0%
+  INFO [550d14e9] Running /usr/bin/env chmod 700 /tmp/git-ssh-db919fcdc713c2f6dec1.sh as deploy@34.80.42.5
+ DEBUG [550d14e9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-db919fcdc713c2f6dec1.sh )
+  INFO [550d14e9] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [f9d13da2] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [f9d13da2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-db919fcdc713c2f6dec1.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [f9d13da2] 	23268a9c550f17ef04a70d3849a51a07f3780761	HEAD
+  INFO [f9d13da2] Finished in 2.370 seconds with exit status 0 (successful).
+  INFO [80114848] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [80114848] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases )
+  INFO [80114848] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [10fc47cd] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [10fc47cd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets )
+  INFO [10fc47cd] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [9a38ab0e] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [9a38ab0e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config )
+  INFO [9a38ab0e] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [615f6589] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [615f6589] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [615f6589] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [f89ba988] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [f89ba988] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [f89ba988] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [58e1d66f] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [58e1d66f] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [58e1d66f] Finished in 0.109 seconds with exit status 1 (failed).
+ DEBUG [ab00c3e3] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [ab00c3e3] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [ab00c3e3] Finished in 0.107 seconds with exit status 1 (failed).
+ DEBUG [a96ed561] Running if test ! -d /home/deploy/graffiti; then echo "Directory does not exist '/home/deploy/graffiti'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [a96ed561] Command: if test ! -d /home/deploy/graffiti; then echo "Directory does not exist '/home/deploy/graffiti'" 1>&2; false; fi
+ DEBUG [a96ed561] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [7ae4c0c4] Running /usr/bin/env git clone --mirror git@github.com:fafachen61/SIDE_graphiti.git /home/deploy/graffiti/repo as deploy@34.80.42.5
+ DEBUG [7ae4c0c4] Command: cd /home/deploy/graffiti && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-db919fcdc713c2f6dec1.sh" ; /usr/bin/env git clone --mirror git@github.com:fafachen61/SIDE_graphiti.git /home/deploy/graffiti/repo )
+ DEBUG [7ae4c0c4] 	Cloning into bare repository '/home/deploy/graffiti/repo'...
+  INFO [7ae4c0c4] Finished in 8.679 seconds with exit status 0 (successful).
+ DEBUG [ca4cc57c] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [ca4cc57c] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [ca4cc57c] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [57ba06fa] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [57ba06fa] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-db919fcdc713c2f6dec1.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [57ba06fa] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [786de7e0] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [786de7e0] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-db919fcdc713c2f6dec1.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [786de7e0] 	Fetching origin
+  INFO [786de7e0] Finished in 2.227 seconds with exit status 0 (successful).
+ DEBUG [af58044c] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [af58044c] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [af58044c] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [d67b0ca5] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160214 as deploy@34.80.42.5
+ DEBUG [d67b0ca5] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-db919fcdc713c2f6dec1.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160214 )
+  INFO [d67b0ca5] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [67317390] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807160214 as deploy@34.80.42.5
+ DEBUG [67317390] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-db919fcdc713c2f6dec1.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807160214 )
+ DEBUG [67317390] 	fatal: Not a valid object name
+ DEBUG [67317390] 	tar: This does not look like a tar archive
+tar: Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-08 00:04:29 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG [24e0fd5e] Running /usr/bin/env which passenger as deploy@34.80.42.5
+ DEBUG [24e0fd5e] Command: /usr/bin/env which passenger
+ DEBUG [24e0fd5e] 	/usr/bin/passenger
+ DEBUG [24e0fd5e] Finished in 0.550 seconds with exit status 0 (successful).
+  INFO [236d89db] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [236d89db] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [236d89db] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-dd3169688eb686222edd.sh 0.0%
+  INFO Uploading /tmp/git-ssh-dd3169688eb686222edd.sh 100.0%
+  INFO [798d3a82] Running /usr/bin/env chmod 700 /tmp/git-ssh-dd3169688eb686222edd.sh as deploy@34.80.42.5
+ DEBUG [798d3a82] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-dd3169688eb686222edd.sh )
+  INFO [798d3a82] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [3e0e0705] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [3e0e0705] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dd3169688eb686222edd.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [3e0e0705] 	23268a9c550f17ef04a70d3849a51a07f3780761	HEAD
+  INFO [3e0e0705] Finished in 2.325 seconds with exit status 0 (successful).
+  INFO [bb0c11a8] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases as deploy@34.80.42.5
+ DEBUG [bb0c11a8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared /home/deploy/graffiti/releases )
+  INFO [bb0c11a8] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [156a31e7] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [156a31e7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared/log /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/shared/public/assets )
+  INFO [156a31e7] Finished in 0.119 seconds with exit status 0 (successful).
+  INFO [ec5d81e6] Running /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config as deploy@34.80.42.5
+ DEBUG [ec5d81e6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/shared/config )
+  INFO [ec5d81e6] Finished in 0.118 seconds with exit status 0 (successful).
+ DEBUG [a576aa3b] Running [ -f /home/deploy/graffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [a576aa3b] Command: [ -f /home/deploy/graffiti/shared/config/database.yml ]
+ DEBUG [a576aa3b] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [574afb48] Running [ -f /home/deploy/graffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [574afb48] Command: [ -f /home/deploy/graffiti/shared/config/master.key ]
+ DEBUG [574afb48] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [aaec7672] Running [ -f /home/deploy/graffiti/current/REVISION ] as deploy@34.80.42.5
+ DEBUG [aaec7672] Command: [ -f /home/deploy/graffiti/current/REVISION ]
+ DEBUG [aaec7672] Finished in 0.105 seconds with exit status 1 (failed).
+ DEBUG [79f0e3dc] Running [ -f /home/deploy/graffiti/repo/HEAD ] as deploy@34.80.42.5
+ DEBUG [79f0e3dc] Command: [ -f /home/deploy/graffiti/repo/HEAD ]
+ DEBUG [79f0e3dc] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/graffiti/repo
+ DEBUG [eab36c2d] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [eab36c2d] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [eab36c2d] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [6249b3c8] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git as deploy@34.80.42.5
+ DEBUG [6249b3c8] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dd3169688eb686222edd.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/SIDE_graphiti.git )
+  INFO [6249b3c8] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [9be8d453] Running /usr/bin/env git remote update --prune as deploy@34.80.42.5
+ DEBUG [9be8d453] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dd3169688eb686222edd.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9be8d453] 	Fetching origin
+  INFO [9be8d453] Finished in 2.458 seconds with exit status 0 (successful).
+ DEBUG [06d4aeba] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [06d4aeba] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [06d4aeba] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [bba53e1d] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160435 as deploy@34.80.42.5
+ DEBUG [bba53e1d] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dd3169688eb686222edd.sh" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160435 )
+  INFO [bba53e1d] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [a3e66994] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807160435 as deploy@34.80.42.5
+ DEBUG [a3e66994] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dd3169688eb686222edd.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/deploy/graffiti/releases/20210807160435 )
+  INFO [a3e66994] Finished in 3.976 seconds with exit status 0 (successful).
+ DEBUG [0ae12a36] Running if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [0ae12a36] Command: if test ! -d /home/deploy/graffiti/repo; then echo "Directory does not exist '/home/deploy/graffiti/repo'" 1>&2; false; fi
+ DEBUG [0ae12a36] Finished in 0.062 seconds with exit status 0 (successful).
+ DEBUG [0daee43a] Running /usr/bin/env git rev-list --max-count=1 main as deploy@34.80.42.5
+ DEBUG [0daee43a] Command: cd /home/deploy/graffiti/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-dd3169688eb686222edd.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [0daee43a] 	23268a9c550f17ef04a70d3849a51a07f3780761
+ DEBUG [0daee43a] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [727d86ac] Running if test ! -d /home/deploy/graffiti/releases/20210807160435; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807160435'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [727d86ac] Command: if test ! -d /home/deploy/graffiti/releases/20210807160435; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807160435'" 1>&2; false; fi
+ DEBUG [727d86ac] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [b3727f59] Running /usr/bin/env echo "23268a9c550f17ef04a70d3849a51a07f3780761" > REVISION as deploy@34.80.42.5
+ DEBUG [b3727f59] Command: cd /home/deploy/graffiti/releases/20210807160435 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo "23268a9c550f17ef04a70d3849a51a07f3780761" > REVISION )
+  INFO [b3727f59] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [3b19a598] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160435/config as deploy@34.80.42.5
+ DEBUG [3b19a598] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160435/config )
+  INFO [3b19a598] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [cc200135] Running [ -L /home/deploy/graffiti/releases/20210807160435/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [cc200135] Command: [ -L /home/deploy/graffiti/releases/20210807160435/config/database.yml ]
+ DEBUG [cc200135] Finished in 0.095 seconds with exit status 1 (failed).
+ DEBUG [86766822] Running [ -f /home/deploy/graffiti/releases/20210807160435/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [86766822] Command: [ -f /home/deploy/graffiti/releases/20210807160435/config/database.yml ]
+ DEBUG [86766822] Finished in 0.185 seconds with exit status 0 (successful).
+  INFO [58e3c801] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807160435/config/database.yml as deploy@34.80.42.5
+ DEBUG [58e3c801] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /home/deploy/graffiti/releases/20210807160435/config/database.yml )
+  INFO [58e3c801] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [7d4b5c47] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807160435/config/database.yml as deploy@34.80.42.5
+ DEBUG [7d4b5c47] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/graffiti/shared/config/database.yml /home/deploy/graffiti/releases/20210807160435/config/database.yml )
+  INFO [7d4b5c47] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [81302352] Running [ -L /home/deploy/graffiti/releases/20210807160435/config/master.key ] as deploy@34.80.42.5
+ DEBUG [81302352] Command: [ -L /home/deploy/graffiti/releases/20210807160435/config/master.key ]
+ DEBUG [81302352] Finished in 0.113 seconds with exit status 1 (failed).
+ DEBUG [17a1c11b] Running [ -f /home/deploy/graffiti/releases/20210807160435/config/master.key ] as deploy@34.80.42.5
+ DEBUG [17a1c11b] Command: [ -f /home/deploy/graffiti/releases/20210807160435/config/master.key ]
+ DEBUG [17a1c11b] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [d8a46f6d] Running /usr/bin/env rm /home/deploy/graffiti/releases/20210807160435/config/master.key as deploy@34.80.42.5
+ DEBUG [d8a46f6d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /home/deploy/graffiti/releases/20210807160435/config/master.key )
+  INFO [d8a46f6d] Finished in 0.120 seconds with exit status 0 (successful).
+  INFO [0daea7af] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807160435/config/master.key as deploy@34.80.42.5
+ DEBUG [0daea7af] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/graffiti/shared/config/master.key /home/deploy/graffiti/releases/20210807160435/config/master.key )
+  INFO [0daea7af] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [3b8fffbc] Running /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160435 /home/deploy/graffiti/releases/20210807160435/tmp /home/deploy/graffiti/releases/20210807160435/public as deploy@34.80.42.5
+ DEBUG [3b8fffbc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/graffiti/releases/20210807160435 /home/deploy/graffiti/releases/20210807160435/tmp /home/deploy/graffiti/releases/20210807160435/public )
+  INFO [3b8fffbc] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG [1df4176c] Running [ -L /home/deploy/graffiti/releases/20210807160435/log ] as deploy@34.80.42.5
+ DEBUG [1df4176c] Command: [ -L /home/deploy/graffiti/releases/20210807160435/log ]
+ DEBUG [1df4176c] Finished in 0.115 seconds with exit status 1 (failed).
+ DEBUG [a3a14ed6] Running [ -d /home/deploy/graffiti/releases/20210807160435/log ] as deploy@34.80.42.5
+ DEBUG [a3a14ed6] Command: [ -d /home/deploy/graffiti/releases/20210807160435/log ]
+ DEBUG [a3a14ed6] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO [bdb98881] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160435/log as deploy@34.80.42.5
+ DEBUG [bdb98881] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160435/log )
+  INFO [bdb98881] Finished in 0.121 seconds with exit status 0 (successful).
+  INFO [6b3df1a2] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807160435/log as deploy@34.80.42.5
+ DEBUG [6b3df1a2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/graffiti/shared/log /home/deploy/graffiti/releases/20210807160435/log )
+  INFO [6b3df1a2] Finished in 0.160 seconds with exit status 0 (successful).
+ DEBUG [a94a6bc8] Running [ -L /home/deploy/graffiti/releases/20210807160435/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [a94a6bc8] Command: [ -L /home/deploy/graffiti/releases/20210807160435/tmp/pids ]
+ DEBUG [a94a6bc8] Finished in 0.116 seconds with exit status 1 (failed).
+ DEBUG [0c4259f4] Running [ -d /home/deploy/graffiti/releases/20210807160435/tmp/pids ] as deploy@34.80.42.5
+ DEBUG [0c4259f4] Command: [ -d /home/deploy/graffiti/releases/20210807160435/tmp/pids ]
+ DEBUG [0c4259f4] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [2f48b74f] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160435/tmp/pids as deploy@34.80.42.5
+ DEBUG [2f48b74f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160435/tmp/pids )
+  INFO [2f48b74f] Finished in 0.465 seconds with exit status 0 (successful).
+  INFO [0ed9ceac] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807160435/tmp/pids as deploy@34.80.42.5
+ DEBUG [0ed9ceac] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/pids /home/deploy/graffiti/releases/20210807160435/tmp/pids )
+  INFO [0ed9ceac] Finished in 0.120 seconds with exit status 0 (successful).
+ DEBUG [79fc5c02] Running [ -L /home/deploy/graffiti/releases/20210807160435/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [79fc5c02] Command: [ -L /home/deploy/graffiti/releases/20210807160435/tmp/cache ]
+ DEBUG [79fc5c02] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [a643a143] Running [ -d /home/deploy/graffiti/releases/20210807160435/tmp/cache ] as deploy@34.80.42.5
+ DEBUG [a643a143] Command: [ -d /home/deploy/graffiti/releases/20210807160435/tmp/cache ]
+ DEBUG [a643a143] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [576ff9c1] Running /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160435/tmp/cache as deploy@34.80.42.5
+ DEBUG [576ff9c1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /home/deploy/graffiti/releases/20210807160435/tmp/cache )
+  INFO [576ff9c1] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [53a51136] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807160435/tmp/cache as deploy@34.80.42.5
+ DEBUG [53a51136] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/cache /home/deploy/graffiti/releases/20210807160435/tmp/cache )
+  INFO [53a51136] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [c3d95d3f] Running [ -L /home/deploy/graffiti/releases/20210807160435/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [c3d95d3f] Command: [ -L /home/deploy/graffiti/releases/20210807160435/tmp/sockets ]
+ DEBUG [c3d95d3f] Finished in 0.194 seconds with exit status 1 (failed).
+ DEBUG [d0e202aa] Running [ -d /home/deploy/graffiti/releases/20210807160435/tmp/sockets ] as deploy@34.80.42.5
+ DEBUG [d0e202aa] Command: [ -d /home/deploy/graffiti/releases/20210807160435/tmp/sockets ]
+ DEBUG [d0e202aa] Finished in 0.124 seconds with exit status 1 (failed).
+  INFO [fd8d0bc3] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807160435/tmp/sockets as deploy@34.80.42.5
+ DEBUG [fd8d0bc3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/graffiti/shared/tmp/sockets /home/deploy/graffiti/releases/20210807160435/tmp/sockets )
+  INFO [fd8d0bc3] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG [8d5bbea6] Running [ -L /home/deploy/graffiti/releases/20210807160435/public/system ] as deploy@34.80.42.5
+ DEBUG [8d5bbea6] Command: [ -L /home/deploy/graffiti/releases/20210807160435/public/system ]
+ DEBUG [8d5bbea6] Finished in 0.094 seconds with exit status 1 (failed).
+ DEBUG [d258f09d] Running [ -d /home/deploy/graffiti/releases/20210807160435/public/system ] as deploy@34.80.42.5
+ DEBUG [d258f09d] Command: [ -d /home/deploy/graffiti/releases/20210807160435/public/system ]
+ DEBUG [d258f09d] Finished in 0.105 seconds with exit status 1 (failed).
+  INFO [f41f4d1a] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807160435/public/system as deploy@34.80.42.5
+ DEBUG [f41f4d1a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/graffiti/shared/public/system /home/deploy/graffiti/releases/20210807160435/public/system )
+  INFO [f41f4d1a] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [44e33d09] Running [ -L /home/deploy/graffiti/releases/20210807160435/public/assets ] as deploy@34.80.42.5
+ DEBUG [44e33d09] Command: [ -L /home/deploy/graffiti/releases/20210807160435/public/assets ]
+ DEBUG [44e33d09] Finished in 0.225 seconds with exit status 1 (failed).
+ DEBUG [2b936a7d] Running [ -d /home/deploy/graffiti/releases/20210807160435/public/assets ] as deploy@34.80.42.5
+ DEBUG [2b936a7d] Command: [ -d /home/deploy/graffiti/releases/20210807160435/public/assets ]
+ DEBUG [2b936a7d] Finished in 0.129 seconds with exit status 1 (failed).
+  INFO [32315798] Running /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807160435/public/assets as deploy@34.80.42.5
+ DEBUG [32315798] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/graffiti/shared/public/assets /home/deploy/graffiti/releases/20210807160435/public/assets )
+  INFO [32315798] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [eadf6702] Running if test ! -d /home/deploy/graffiti/releases/20210807160435; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807160435'" 1>&2; false; fi as deploy@34.80.42.5
+ DEBUG [eadf6702] Command: if test ! -d /home/deploy/graffiti/releases/20210807160435; then echo "Directory does not exist '/home/deploy/graffiti/releases/20210807160435'" 1>&2; false; fi
+ DEBUG [eadf6702] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [9f0c55e3] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@34.80.42.5
+ DEBUG [9f0c55e3] Command: cd /home/deploy/graffiti/releases/20210807160435 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+ DEBUG [9f0c55e3] 	bash: /home/deploy/.rbenv/bin/rbenv: No such file or directory
