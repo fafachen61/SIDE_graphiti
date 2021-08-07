@@ -241,3 +241,34 @@ tar: Exiting with failure status due to previous errors
  DEBUG [6e8be44e] 	fatal: Not a valid object name
  DEBUG [6e8be44e] 	tar: This does not look like a tar archive
 tar: Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-07 23:47:18 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [efa0b9be] Running /usr/bin/env mkdir -p /tmp as deploy@34.80.42.5
+ DEBUG [efa0b9be] Command: /usr/bin/env mkdir -p /tmp
+  INFO [efa0b9be] Finished in 0.599 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-5d668508be915f405360.sh 0.0%
+  INFO Uploading /tmp/git-ssh-5d668508be915f405360.sh 100.0%
+  INFO [acd84f66] Running /usr/bin/env chmod 700 /tmp/git-ssh-5d668508be915f405360.sh as deploy@34.80.42.5
+ DEBUG [acd84f66] Command: /usr/bin/env chmod 700 /tmp/git-ssh-5d668508be915f405360.sh
+  INFO [acd84f66] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [062833fa] Running /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD as deploy@34.80.42.5
+ DEBUG [062833fa] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5d668508be915f405360.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/SIDE_graphiti.git HEAD )
+ DEBUG [062833fa] 	b0cd40effa9df72f81de222e7a7cd68162e3c5e9	HEAD
+  INFO [062833fa] Finished in 3.254 seconds with exit status 0 (successful).
+  INFO [03e52fc5] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases as deploy@34.80.42.5
+ DEBUG [03e52fc5] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared /home/deploy/mygraffiti/releases
+  INFO [03e52fc5] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [8d482fd3] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets as deploy@34.80.42.5
+ DEBUG [8d482fd3] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/log /home/deploy/mygraffiti/shared/tmp/pids /home/deploy/mygraffiti/shared/tmp/cache /home/deploy/mygraffiti/shared/tmp/sockets /home/deploy/mygraffiti/shared/public/system /home/deploy/mygraffiti/shared/public/assets
+  INFO [8d482fd3] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [144b7d09] Running /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config as deploy@34.80.42.5
+ DEBUG [144b7d09] Command: /usr/bin/env mkdir -p /home/deploy/mygraffiti/shared/config
+  INFO [144b7d09] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [5dd2fbc8] Running [ -f /home/deploy/mygraffiti/shared/config/database.yml ] as deploy@34.80.42.5
+ DEBUG [5dd2fbc8] Command: [ -f /home/deploy/mygraffiti/shared/config/database.yml ]
+ DEBUG [5dd2fbc8] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [29b0bef6] Running [ -f /home/deploy/mygraffiti/shared/config/master.key ] as deploy@34.80.42.5
+ DEBUG [29b0bef6] Command: [ -f /home/deploy/mygraffiti/shared/config/master.key ]
+ DEBUG [29b0bef6] Finished in 0.112 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/mygraffiti/shared/config/master.key does not exist on 34.80.42.5

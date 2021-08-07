@@ -5,10 +5,10 @@ lock "~> 3.16.0"
 set :application, "graffiti"
 set :repo_url, "git@github.com:fafachen61/SIDE_graphiti.git"
 # Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/mygraffiti"
+set :deploy_to, "/home/deploy/graffiti"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
