@@ -14,7 +14,7 @@ class App extends Component {
         this.loginStatus()
     }
     loginStatus = () => {
-        axios.get('http://localhost:3000/logged_in', {withCredentials: true})    
+        axios.get('http://localhost:3001/logged_in', {withCredentials: true})    
         .then(response => {
             if (response.data.logged_in) {
                 this.handleLogin(response)
@@ -22,7 +22,7 @@ class App extends Component {
                 this.handleLogout()
             }
         })
-        .catch(error => console.log('api errors:', error))
+        .catch(error => console.log('api errors app:', error))
         }
     handleLogin = (data) => {
         this.setState({
@@ -45,5 +45,3 @@ class App extends Component {
     }
   }
 export default App;
-
-//export default props => <>{Routes}</>;

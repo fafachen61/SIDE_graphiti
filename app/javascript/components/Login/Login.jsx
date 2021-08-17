@@ -27,7 +27,7 @@ class Login extends Component {
             email: email,
             password: password
         }
-        axios.post('http://localhost:3000/api/v1/login', {user}, {withCredentials: true})
+        axios.post('http://localhost:3001/api/v1/login', {user}, {withCredentials: true})
             .then(response => {
                 if (response.data.logged_in) {
                     console.log('success')
@@ -36,7 +36,7 @@ class Login extends Component {
                 } else {
                     console.log('failed')
                     console.log(response.data.status)
-                    console.log(response.data.errors)
+                    console.log(response.data.errors[0])
                     this.setState({
                         errors: response.data.errors
                     })

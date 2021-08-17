@@ -11833,3 +11833,1022 @@ Processing by HomepageController#index as HTML
 Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-08-17 22:44:32 +0800
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/chenfayu/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (1.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2073ms (Views: 2070.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/images/index" for ::1 at 2021-08-17 22:44:40 +0800
+Processing by Api::V1::ImagesController#index as */*
+  [1m[36mImage Load (3.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/images_controller.rb:4
+Completed 200 OK in 53ms (Views: 12.4ms | ActiveRecord: 35.4ms)
+
+
+Started GET "/2233" for ::1 at 2021-08-17 22:44:40 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"2233"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 22:45:43 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 22:45:47 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/images/index" for ::1 at 2021-08-17 22:45:49 +0800
+Processing by Api::V1::ImagesController#index as */*
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/images_controller.rb:4
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/2233" for ::1 at 2021-08-17 22:45:49 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"2233"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (1.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 22:58:26 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 9d9ff185e2b952588242
+Version: webpack 4.46.0
+Time: 2947ms
+Built at: 2021-08-17 10:58:32 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-0c0684ccb79f783d8230.js    2.3 MiB        Index  [emitted] [immutable]  Index
+      js/Index-0c0684ccb79f783d8230.js.map   2.58 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-0c0684ccb79f783d8230.js js/Index-0c0684ccb79f783d8230.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 16 hidden modules
+
+ERROR in ./app/javascript/packs/Index.jsx
+Module not found: Error: Can't resolve '../components/App' in '/Users/chenfayu/Desktop/graffiti/app/javascript/packs'
+ @ ./app/javascript/packs/Index.jsx 13:0-36 15:43-46
+
+Completed 200 OK in 6811ms (Views: 6805.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 22:58:39 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 22:59:55 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: bbc2097ed3afc9533150
+Version: webpack 4.46.0
+Time: 2735ms
+Built at: 2021-08-17 11:00:01 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-03924c1a55807d39f154.js    2.3 MiB        Index  [emitted] [immutable]  Index
+      js/Index-03924c1a55807d39f154.js.map   2.58 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-03924c1a55807d39f154.js js/Index-03924c1a55807d39f154.js.map
+[./app/javascript/packs/Index.jsx] 881 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 16 hidden modules
+
+ERROR in ./app/javascript/packs/Index.jsx
+Module not found: Error: [CaseSensitivePathsPlugin] `/Users/chenfayu/Desktop/graffiti/app/javascript/components/App/App.jsx` does not match the corresponding path on disk `APP`.
+ @ ./app/javascript/packs/Index.jsx 13:0-40 15:43-46
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Completed 200 OK in 5429ms (Views: 5425.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:00:29 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.5ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: f88adfed28f71d50e5ed
+Version: webpack 4.46.0
+Time: 2714ms
+Built at: 2021-08-17 11:00:34 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-0cb499d3b7a444dcc1da.js    2.3 MiB        Index  [emitted] [immutable]  Index
+      js/Index-0cb499d3b7a444dcc1da.js.map   2.58 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-0cb499d3b7a444dcc1da.js js/Index-0cb499d3b7a444dcc1da.js.map
+[./app/javascript/packs/Index.jsx] 885 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 16 hidden modules
+
+ERROR in ./app/javascript/packs/Index.jsx
+Module not found: Error: [CaseSensitivePathsPlugin] `/Users/chenfayu/Desktop/graffiti/app/javascript/components/App/App.jsx` does not match the corresponding path on disk `APP`.
+ @ ./app/javascript/packs/Index.jsx 13:0-44 15:43-46
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Completed 200 OK in 5420ms (Views: 5416.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:01:19 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: b4c88804d908d15f8a3f
+Version: webpack 4.46.0
+Time: 2076ms
+Built at: 2021-08-17 11:01:22 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-acc7b1b234a09941d3fd.js   2.36 MiB        Index  [emitted] [immutable]  Index
+      js/Index-acc7b1b234a09941d3fd.js.map   2.63 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-acc7b1b234a09941d3fd.js js/Index-acc7b1b234a09941d3fd.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 45 hidden modules
+
+ERROR in ./app/javascript/components/App.jsx
+Module not found: Error: Can't resolve '../../routes/Index' in '/Users/chenfayu/Desktop/graffiti/app/javascript/components'
+ @ ./app/javascript/components/App.jsx 22:0-40 82:68-74
+ @ ./app/javascript/packs/Index.jsx
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Completed 200 OK in 3436ms (Views: 3433.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:02:23 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.2ms)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-08-17 23:02:24 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 02ae0034acb96b2d2c1d
+Version: webpack 4.46.0
+Time: 4734ms
+Built at: 2021-08-17 11:02:30 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-73ce5c56c48e9e1c185f.js   3.47 MiB        Index  [emitted] [immutable]  Index
+      js/Index-73ce5c56c48e9e1c185f.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-73ce5c56c48e9e1c185f.js js/Index-73ce5c56c48e9e1c185f.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.79 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 303 hidden modules
+
+ERROR in ./app/javascript/components/Home/Home.jsx
+Module not found: Error: Can't resolve '../../src/main_logo.jpg' in '/Users/chenfayu/Desktop/graffiti/app/javascript/components/Home'
+ @ ./app/javascript/components/Home/Home.jsx 6:0-43 35:9-13
+ @ ./app/javascript/routes/Index.jsx
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./app/javascript/routes/Index.jsx
+Module not found: Error: Can't resolve '../components/Settings' in '/Users/chenfayu/Desktop/graffiti/app/javascript/routes'
+ @ ./app/javascript/routes/Index.jsx 10:0-46 90:13-21
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Compilation failed:
+Hash: 02ae0034acb96b2d2c1d
+Version: webpack 4.46.0
+Time: 4118ms
+Built at: 2021-08-17 11:02:30 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-73ce5c56c48e9e1c185f.js   3.47 MiB        Index  [emitted] [immutable]  Index
+      js/Index-73ce5c56c48e9e1c185f.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-73ce5c56c48e9e1c185f.js js/Index-73ce5c56c48e9e1c185f.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.79 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 303 hidden modules
+
+ERROR in ./app/javascript/components/Home/Home.jsx
+Module not found: Error: Can't resolve '../../src/main_logo.jpg' in '/Users/chenfayu/Desktop/graffiti/app/javascript/components/Home'
+ @ ./app/javascript/components/Home/Home.jsx 6:0-43 35:9-13
+ @ ./app/javascript/routes/Index.jsx
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+ERROR in ./app/javascript/routes/Index.jsx
+Module not found: Error: Can't resolve '../components/Settings' in '/Users/chenfayu/Desktop/graffiti/app/javascript/routes'
+ @ ./app/javascript/routes/Index.jsx 10:0-46 90:13-21
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Completed 200 OK in 5597ms (Views: 5594.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 7093ms (Views: 7091.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:03:03 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 50723b4d1ecc033ddb13
+Version: webpack 4.46.0
+Time: 3249ms
+Built at: 2021-08-17 11:03:08 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-ba715dfd7e9092e6204c.js   3.47 MiB        Index  [emitted] [immutable]  Index
+      js/Index-ba715dfd7e9092e6204c.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-ba715dfd7e9092e6204c.js js/Index-ba715dfd7e9092e6204c.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.79 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 303 hidden modules
+
+ERROR in ./app/javascript/routes/Index.jsx
+Module not found: Error: Can't resolve '../components/Settings' in '/Users/chenfayu/Desktop/graffiti/app/javascript/routes'
+ @ ./app/javascript/routes/Index.jsx 10:0-46 90:13-21
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Completed 200 OK in 4610ms (Views: 4608.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:03:54 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 53e593cf332f13481137
+Version: webpack 4.46.0
+Time: 3462ms
+Built at: 2021-08-17 11:03:59 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-4d75512bc2beae41b5d6.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-4d75512bc2beae41b5d6.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-4d75512bc2beae41b5d6.js js/Index-4d75512bc2beae41b5d6.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+ERROR in ./app/javascript/components/Settings/Settings.jsx
+Module not found: Error: Can't resolve './Primary_searchbar' in '/Users/chenfayu/Desktop/graffiti/app/javascript/components/Settings'
+ @ ./app/javascript/components/Settings/Settings.jsx 29:0-54 83:42-61
+ @ ./app/javascript/routes/Index.jsx
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Completed 200 OK in 4835ms (Views: 4832.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:05:33 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 2b33dded390c046799f7
+Version: webpack 4.46.0
+Time: 4087ms
+Built at: 2021-08-17 11:05:40 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-16f124cdbd864923f74b.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-16f124cdbd864923f74b.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-16f124cdbd864923f74b.js js/Index-16f124cdbd864923f74b.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+ERROR in ./app/javascript/components/Settings/Settings.jsx
+Module not found: Error: Can't resolve './Primary_searchbar/Primary_searchbar' in '/Users/chenfayu/Desktop/graffiti/app/javascript/components/Settings'
+ @ ./app/javascript/components/Settings/Settings.jsx 29:0-72 83:42-61
+ @ ./app/javascript/routes/Index.jsx
+ @ ./app/javascript/components/App.jsx
+ @ ./app/javascript/packs/Index.jsx
+
+
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+Completed 200 OK in 6767ms (Views: 6764.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:06:00 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 49916427320be70eaabf
+Version: webpack 4.46.0
+Time: 4068ms
+Built at: 2021-08-17 11:06:06 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-99fde057d86c40b73fe9.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-99fde057d86c40b73fe9.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-99fde057d86c40b73fe9.js js/Index-99fde057d86c40b73fe9.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 6252ms (Views: 6249.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/images/index" for ::1 at 2021-08-17 23:06:20 +0800
+Processing by Api::V1::ImagesController#index as */*
+  [1m[36mImage Load (1.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/images_controller.rb:4
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/2233" for ::1 at 2021-08-17 23:06:20 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"2233"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:06:22 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/images/index" for ::1 at 2021-08-17 23:06:26 +0800
+Processing by Api::V1::ImagesController#index as */*
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY "images"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/images_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/2233" for ::1 at 2021-08-17 23:06:26 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"2233"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2021-08-17 23:06:35 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"login"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2021-08-17 23:06:44 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"login"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-17 23:06:53 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2021-08-17 23:10:20 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"signup"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (2.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 653fe73162c152d6a0dd
+Version: webpack 4.46.0
+Time: 4081ms
+Built at: 2021-08-17 11:10:27 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-c537945c2e0c5c957c44.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-c537945c2e0c5c957c44.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-c537945c2e0c5c957c44.js js/Index-c537945c2e0c5c957c44.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 6588ms (Views: 6582.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2021-08-17 23:14:35 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"signup"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 2a611b2e1e3762df7c4e
+Version: webpack 4.46.0
+Time: 4259ms
+Built at: 2021-08-17 11:14:42 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-a2aa211c4ef78f390304.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-a2aa211c4ef78f390304.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-a2aa211c4ef78f390304.js js/Index-a2aa211c4ef78f390304.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 7351ms (Views: 7347.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2021-08-17 23:14:53 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"signup"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.5ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e1fe004dda4e75ef30f7
+Version: webpack 4.46.0
+Time: 4029ms
+Built at: 2021-08-17 11:15:00 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-8a32b196052539fee6a4.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-8a32b196052539fee6a4.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-8a32b196052539fee6a4.js js/Index-8a32b196052539fee6a4.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 6418ms (Views: 6414.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logged_in" for ::1 at 2021-08-17 23:15:00 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"logged_in"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/users" for ::1 at 2021-08-17 23:15:17 +0800
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"allen", "email"=>"fafafa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[36mUser Exists (9.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "allen"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[36mUser Create (7.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "allen"], ["email", "fafafa"], ["password_digest", "$2a$12$/5MqJOhPcYG.YGX21lY2tuK59PB8knFV1jp./BB6DpAeRUCmYKfKG"], ["created_at", "2021-08-17 15:15:17.827497"], ["updated_at", "2021-08-17 15:15:17.827497"]]
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:32
+Completed 200 OK in 266ms (Views: 0.5ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/login" for ::1 at 2021-08-17 23:16:28 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"login"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: a3a1055213aaceb59081
+Version: webpack 4.46.0
+Time: 4215ms
+Built at: 2021-08-17 11:16:34 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-e8a08bd7ff8f2d7f68ba.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-e8a08bd7ff8f2d7f68ba.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-e8a08bd7ff8f2d7f68ba.js js/Index-e8a08bd7ff8f2d7f68ba.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 6425ms (Views: 6422.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logged_in" for ::1 at 2021-08-17 23:16:35 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"logged_in"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2021-08-17 23:16:44 +0800
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]"}}}
+Unpermitted parameter: :email
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fafa"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sessions_controller.rb:4
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/users" for ::1 at 2021-08-17 23:17:30 +0800
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fafa"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "fafa"], ["email", "fafafa"], ["password_digest", "$2a$12$Ns.zhKWGcoRywgqfx42Pw.TSex9xWww4oEhCeu12VOMCL7A4rqSom"], ["created_at", "2021-08-17 15:17:31.204053"], ["updated_at", "2021-08-17 15:17:31.204053"]]
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:32
+Completed 200 OK in 211ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/signup" for ::1 at 2021-08-17 23:19:09 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"signup"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 5c689f218a0a83b902be
+Version: webpack 4.46.0
+Time: 3798ms
+Built at: 2021-08-17 11:19:15 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-f14f2c98a558e224e523.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-f14f2c98a558e224e523.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-f14f2c98a558e224e523.js js/Index-f14f2c98a558e224e523.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 5444ms (Views: 5442.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logged_in" for ::1 at 2021-08-17 23:19:15 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"logged_in"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/users" for ::1 at 2021-08-17 23:19:19 +0800
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fafa"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[35m (2.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/users_controller.rb:32
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/api/v1/users" for ::1 at 2021-08-17 23:19:27 +0800
+Processing by Api::V1::UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fafa"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/users_controller.rb:32
+Completed 200 OK in 212ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2021-08-17 23:19:45 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"login"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 90282a30d6a3aa6ca887
+Version: webpack 4.46.0
+Time: 3739ms
+Built at: 2021-08-17 11:19:51 ├F10: PM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-e703363f16147d887c58.js   3.48 MiB        Index  [emitted] [immutable]  Index
+      js/Index-e703363f16147d887c58.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-e703363f16147d887c58.js js/Index-e703363f16147d887c58.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 5355ms (Views: 5351.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logged_in" for ::1 at 2021-08-17 23:19:51 +0800
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"logged_in"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2021-08-17 23:19:57 +0800
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]"}}}
+Unpermitted parameter: :email
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fafa"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sessions_controller.rb:4
+Unpermitted parameter: :email
+Completed 200 OK in 207ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2021-08-18 00:21:56 +0800
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"fafa", "email"=>"fafafa", "password"=>"[FILTERED]"}}}
+Unpermitted parameter: :email
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fafa"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sessions_controller.rb:4
+Unpermitted parameter: :email
+Completed 200 OK in 212ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-08-18 00:27:37 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: aef86bc40f3889fc36a7
+Version: webpack 4.46.0
+Time: 4135ms
+Built at: 2021-08-18 12:27:44 ├F10: AM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-69dc8952fa1bbaff208f.js   3.49 MiB        Index  [emitted] [immutable]  Index
+      js/Index-69dc8952fa1bbaff208f.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-69dc8952fa1bbaff208f.js js/Index-69dc8952fa1bbaff208f.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 7043ms (Views: 7038.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-18 00:28:36 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.6ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/chenfayu/Desktop/graffiti/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 4ce4c516474b30281c16
+Version: webpack 4.46.0
+Time: 4222ms
+Built at: 2021-08-18 12:28:43 ├F10: AM┤
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-b10b3eaa154d1f6bb45f.js   3.49 MiB        Index  [emitted] [immutable]  Index
+      js/Index-b10b3eaa154d1f6bb45f.js.map   3.52 MiB        Index  [emitted] [dev]        Index
+    js/application-2181adcc3224cdc0c9c1.js   4.72 KiB  application  [emitted] [immutable]  application
+js/application-2181adcc3224cdc0c9c1.js.map    4.5 KiB  application  [emitted] [dev]        application
+                             manifest.json  733 bytes               [emitted]              
+          media/src/main_logo-960532df.jpg   23.1 KiB               [emitted]              
+Entrypoint application = js/application-2181adcc3224cdc0c9c1.js js/application-2181adcc3224cdc0c9c1.js.map
+Entrypoint Index = js/Index-b10b3eaa154d1f6bb45f.js js/Index-b10b3eaa154d1f6bb45f.js.map
+[./app/javascript/packs/Index.jsx] 877 bytes {Index} [built]
+[./app/javascript/packs/application.js] 845 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 2.8 KiB {Index} [built]
+[./app/src/main_logo.jpg] 78 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {Index} [built]
+    + 304 hidden modules
+
+Completed 200 OK in 6581ms (Views: 6577.4ms | ActiveRecord: 0.0ms)
+
+

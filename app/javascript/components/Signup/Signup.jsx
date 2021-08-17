@@ -28,11 +28,11 @@ class Signup extends Component {
             password: password,
             password_confirmation: password_confirmation
         }
-        axios.post('http://localhost:3000/api/v1/users', {user}, {withCredentials: true})
+        axios.post('http://localhost:3001/api/v1/users', {user}, {withCredentials: true})
             .then(response => {
                 if (response.data.status === 'created') {
-                    console.log('succedd')
-                    this.props.handleLogin(response.data)
+                    console.log('succeed')
+                    //this.props.handleLogin(response.data)
                     this.redirect()
                 } else {
                     console.log('failed')
@@ -44,7 +44,7 @@ class Signup extends Component {
                     })
                 }
             })
-            .catch(error => console.log('api errors:', error.response.data))
+            .catch(error => console.log('api errors signup:', error.response.data))
     };
     redirect = () => {
         console.log('redirecting')
